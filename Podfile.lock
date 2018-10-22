@@ -1,0 +1,24 @@
+PODS:
+  - Cuckoo (0.12.0)
+  - iOSSnapshotTestCase (4.0.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 4.0.0)
+  - iOSSnapshotTestCase/Core (4.0.0)
+  - iOSSnapshotTestCase/SwiftSupport (4.0.0):
+    - iOSSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - Cuckoo
+  - iOSSnapshotTestCase
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Cuckoo
+    - iOSSnapshotTestCase
+
+SPEC CHECKSUMS:
+  Cuckoo: d30b6c149e52ffbcfe6b4a9543e4627d08947274
+  iOSSnapshotTestCase: 711379b19f69a22c131527df862352c877c2773c
+
+PODFILE CHECKSUM: 54ae3559641c379c3d3a64023942b782c85cd22c
+
+COCOAPODS: 1.5.3

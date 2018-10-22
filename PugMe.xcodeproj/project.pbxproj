@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01EF4AA4E6AF8C08EBD31D31 /* Pods_PugMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98E906199FF65783F5F5B75 /* Pods_PugMeTests.framework */; };
+		4507E9BC217B2628007434D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9BB217B2628007434D4 /* AppDelegate.swift */; };
+		4507E9BE217B2628007434D4 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9BD217B2628007434D4 /* ImageViewController.swift */; };
+		4507E9C1217B2628007434D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507E9BF217B2628007434D4 /* Main.storyboard */; };
+		4507E9C3217B262A007434D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4507E9C2217B262A007434D4 /* Assets.xcassets */; };
+		4507E9C6217B262A007434D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507E9C4217B262A007434D4 /* LaunchScreen.storyboard */; };
+		4507E9CE217B2656007434D4 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9CD217B2656007434D4 /* ImageDownloader.swift */; };
+		4507E9D0217B266D007434D4 /* ImageViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9CF217B266D007434D4 /* ImageViewProtocols.swift */; };
+		4507E9D2217B27AA007434D4 /* ImageRequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9D1217B27AA007434D4 /* ImageRequestResult.swift */; };
+		4507E9D4217B2EB3007434D4 /* URLSessionDataRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9D3217B2EB3007434D4 /* URLSessionDataRequester.swift */; };
+		4507E9D6217B2F01007434D4 /* RedditImageViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9D5217B2F01007434D4 /* RedditImageViewBuilder.swift */; };
+		4507E9D8217B3004007434D4 /* ImageViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9D7217B3004007434D4 /* ImageViewPresenter.swift */; };
+		4507E9DC217B3428007434D4 /* DataProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9DB217B3428007434D4 /* DataProtocols.swift */; };
+		4507E9DE217B5CDB007434D4 /* RedditImageURLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9DD217B5CDB007434D4 /* RedditImageURLProvider.swift */; };
+		4507EA28217BA66B007434D4 /* RedditClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4507EA26217B7C82007434D4 /* RedditClient.framework */; };
+		4507EA29217BA66B007434D4 /* RedditClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4507EA26217B7C82007434D4 /* RedditClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4507EA34217D9DDE007434D4 /* ImageDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EA33217D9DDE007434D4 /* ImageDownloaderTests.swift */; };
+		4507EA3E217D9F56007434D4 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EA3D217D9F56007434D4 /* GeneratedMocks.swift */; };
+		4507EA40217DAB2E007434D4 /* pug.png in Resources */ = {isa = PBXBuildFile; fileRef = 4507EA3F217DAB2E007434D4 /* pug.png */; };
+		451DE21F217DEB0700A181DE /* ImageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DE21E217DEB0700A181DE /* ImageViewControllerTests.swift */; };
+		45BB62D9217DDF7500249512 /* ImageViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB62D8217DDF7500249512 /* ImageViewPresenterTests.swift */; };
+		45E39D15217E26D70071050B /* RedditImageViewBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D14217E26D70071050B /* RedditImageViewBuilderTests.swift */; };
+		961FB3FEF0AC47A3E18B8132 /* Pods_PugMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A694F202B27342F7DBBBDCD4 /* Pods_PugMe.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4507EA36217D9DDE007434D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4507E9B0217B2627007434D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4507E9B7217B2627007434D4;
+			remoteInfo = PugMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4507EA2A217BA66B007434D4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4507EA29217BA66B007434D4 /* RedditClient.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0CDE1654C0E66B2018F0FC42 /* Pods-PugMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PugMe/Pods-PugMe.debug.xcconfig"; sourceTree = "<group>"; };
+		4507E9B8217B2627007434D4 /* PugMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PugMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4507E9BB217B2628007434D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4507E9BD217B2628007434D4 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		4507E9C0217B2628007434D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4507E9C2217B262A007434D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4507E9C5217B262A007434D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4507E9C7217B262A007434D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4507E9CD217B2656007434D4 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		4507E9CF217B266D007434D4 /* ImageViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewProtocols.swift; sourceTree = "<group>"; };
+		4507E9D1217B27AA007434D4 /* ImageRequestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequestResult.swift; sourceTree = "<group>"; };
+		4507E9D3217B2EB3007434D4 /* URLSessionDataRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataRequester.swift; sourceTree = "<group>"; };
+		4507E9D5217B2F01007434D4 /* RedditImageViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditImageViewBuilder.swift; sourceTree = "<group>"; };
+		4507E9D7217B3004007434D4 /* ImageViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewPresenter.swift; sourceTree = "<group>"; };
+		4507E9DB217B3428007434D4 /* DataProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProtocols.swift; sourceTree = "<group>"; };
+		4507E9DD217B5CDB007434D4 /* RedditImageURLProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditImageURLProvider.swift; sourceTree = "<group>"; };
+		4507EA26217B7C82007434D4 /* RedditClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RedditClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4507EA31217D9DDE007434D4 /* PugMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PugMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4507EA33217D9DDE007434D4 /* ImageDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderTests.swift; sourceTree = "<group>"; };
+		4507EA35217D9DDE007434D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4507EA3D217D9F56007434D4 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		4507EA3F217DAB2E007434D4 /* pug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pug.png; sourceTree = "<group>"; };
+		451DE21E217DEB0700A181DE /* ImageViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewControllerTests.swift; sourceTree = "<group>"; };
+		45BB62D8217DDF7500249512 /* ImageViewPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewPresenterTests.swift; sourceTree = "<group>"; };
+		45E39D14217E26D70071050B /* RedditImageViewBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditImageViewBuilderTests.swift; sourceTree = "<group>"; };
+		8A657D58FBC8C4154ABF55F7 /* Pods-PugMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PugMeTests/Pods-PugMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A694F202B27342F7DBBBDCD4 /* Pods_PugMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PugMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA56413F4B2777F4FDA8ACF6 /* Pods-PugMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-PugMe/Pods-PugMe.release.xcconfig"; sourceTree = "<group>"; };
+		CEB72F12E268E2BB1DF3C45B /* Pods-PugMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PugMeTests/Pods-PugMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		F98E906199FF65783F5F5B75 /* Pods_PugMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PugMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4507E9B5217B2627007434D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4507EA28217BA66B007434D4 /* RedditClient.framework in Frameworks */,
+				961FB3FEF0AC47A3E18B8132 /* Pods_PugMe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4507EA2E217D9DDE007434D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EF4AA4E6AF8C08EBD31D31 /* Pods_PugMeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42A4F244FCAFDF2B3973D5D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4507EA26217B7C82007434D4 /* RedditClient.framework */,
+				A694F202B27342F7DBBBDCD4 /* Pods_PugMe.framework */,
+				F98E906199FF65783F5F5B75 /* Pods_PugMeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4507E9AF217B2627007434D4 = {
+			isa = PBXGroup;
+			children = (
+				4507E9BA217B2627007434D4 /* PugMe */,
+				4507EA32217D9DDE007434D4 /* PugMeTests */,
+				4507E9B9217B2627007434D4 /* Products */,
+				42A4F244FCAFDF2B3973D5D0 /* Frameworks */,
+				F383F7BBE50C490657BBCB43 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4507E9B9217B2627007434D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4507E9B8217B2627007434D4 /* PugMe.app */,
+				4507EA31217D9DDE007434D4 /* PugMeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4507E9BA217B2627007434D4 /* PugMe */ = {
+			isa = PBXGroup;
+			children = (
+				4507E9DA217B33C3007434D4 /* Data */,
+				4507E9D9217B337F007434D4 /* ImageView */,
+				4507E9BB217B2628007434D4 /* AppDelegate.swift */,
+				4507E9BF217B2628007434D4 /* Main.storyboard */,
+				4507E9C2217B262A007434D4 /* Assets.xcassets */,
+				4507E9C4217B262A007434D4 /* LaunchScreen.storyboard */,
+				4507E9C7217B262A007434D4 /* Info.plist */,
+			);
+			path = PugMe;
+			sourceTree = "<group>";
+		};
+		4507E9D9217B337F007434D4 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				4507E9DD217B5CDB007434D4 /* RedditImageURLProvider.swift */,
+				4507E9D5217B2F01007434D4 /* RedditImageViewBuilder.swift */,
+				4507E9CD217B2656007434D4 /* ImageDownloader.swift */,
+				4507E9D1217B27AA007434D4 /* ImageRequestResult.swift */,
+				4507E9CF217B266D007434D4 /* ImageViewProtocols.swift */,
+				4507E9BD217B2628007434D4 /* ImageViewController.swift */,
+				4507E9D7217B3004007434D4 /* ImageViewPresenter.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		4507E9DA217B33C3007434D4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4507E9D3217B2EB3007434D4 /* URLSessionDataRequester.swift */,
+				4507E9DB217B3428007434D4 /* DataProtocols.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4507EA32217D9DDE007434D4 /* PugMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				4507EA35217D9DDE007434D4 /* Info.plist */,
+				4507EA3F217DAB2E007434D4 /* pug.png */,
+				4507EA3D217D9F56007434D4 /* GeneratedMocks.swift */,
+				4507EA33217D9DDE007434D4 /* ImageDownloaderTests.swift */,
+				45BB62D8217DDF7500249512 /* ImageViewPresenterTests.swift */,
+				451DE21E217DEB0700A181DE /* ImageViewControllerTests.swift */,
+				45E39D14217E26D70071050B /* RedditImageViewBuilderTests.swift */,
+			);
+			path = PugMeTests;
+			sourceTree = "<group>";
+		};
+		F383F7BBE50C490657BBCB43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CDE1654C0E66B2018F0FC42 /* Pods-PugMe.debug.xcconfig */,
+				BA56413F4B2777F4FDA8ACF6 /* Pods-PugMe.release.xcconfig */,
+				8A657D58FBC8C4154ABF55F7 /* Pods-PugMeTests.debug.xcconfig */,
+				CEB72F12E268E2BB1DF3C45B /* Pods-PugMeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4507E9B7217B2627007434D4 /* PugMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4507E9CA217B262A007434D4 /* Build configuration list for PBXNativeTarget "PugMe" */;
+			buildPhases = (
+				7BF14CFC4E85FA64FEB45048 /* [CP] Check Pods Manifest.lock */,
+				4507E9B4217B2627007434D4 /* Sources */,
+				4507E9B5217B2627007434D4 /* Frameworks */,
+				4507E9B6217B2627007434D4 /* Resources */,
+				4507EA2A217BA66B007434D4 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PugMe;
+			productName = PugMe;
+			productReference = 4507E9B8217B2627007434D4 /* PugMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4507EA30217D9DDE007434D4 /* PugMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4507EA38217D9DDE007434D4 /* Build configuration list for PBXNativeTarget "PugMeTests" */;
+			buildPhases = (
+				A4F5F6510CA340526A1D3A9F /* [CP] Check Pods Manifest.lock */,
+				4507EA3C217D9ECB007434D4 /* Generate Mocks */,
+				4507EA2D217D9DDE007434D4 /* Sources */,
+				4507EA2E217D9DDE007434D4 /* Frameworks */,
+				4507EA2F217D9DDE007434D4 /* Resources */,
+				D89226C71D4B7C06151EC4F7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4507EA37217D9DDE007434D4 /* PBXTargetDependency */,
+			);
+			name = PugMeTests;
+			productName = PugMeTests;
+			productReference = 4507EA31217D9DDE007434D4 /* PugMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4507E9B0217B2627007434D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = DinkyWonder;
+				TargetAttributes = {
+					4507E9B7217B2627007434D4 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					4507EA30217D9DDE007434D4 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 4507E9B7217B2627007434D4;
+					};
+				};
+			};
+			buildConfigurationList = 4507E9B3217B2627007434D4 /* Build configuration list for PBXProject "PugMe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4507E9AF217B2627007434D4;
+			productRefGroup = 4507E9B9217B2627007434D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4507E9B7217B2627007434D4 /* PugMe */,
+				4507EA30217D9DDE007434D4 /* PugMeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4507E9B6217B2627007434D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4507E9C6217B262A007434D4 /* LaunchScreen.storyboard in Resources */,
+				4507E9C3217B262A007434D4 /* Assets.xcassets in Resources */,
+				4507E9C1217B2628007434D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4507EA2F217D9DDE007434D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4507EA40217DAB2E007434D4 /* pug.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4507EA3C217D9ECB007434D4 /* Generate Mocks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Mocks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file. Change \"$PROJECT_DIR/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"$PROJECT_DIR/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"$INPUT_DIR/ImageView/ImageViewProtocols.swift\" \\\n\"$INPUT_DIR/Data/DataProtocols.swift\"\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+		};
+		7BF14CFC4E85FA64FEB45048 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PugMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4F5F6510CA340526A1D3A9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PugMeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D89226C71D4B7C06151EC4F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PugMeTests/Pods-PugMeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cuckoo/Cuckoo.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cuckoo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PugMeTests/Pods-PugMeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4507E9B4217B2627007434D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4507E9CE217B2656007434D4 /* ImageDownloader.swift in Sources */,
+				4507E9D8217B3004007434D4 /* ImageViewPresenter.swift in Sources */,
+				4507E9D4217B2EB3007434D4 /* URLSessionDataRequester.swift in Sources */,
+				4507E9BE217B2628007434D4 /* ImageViewController.swift in Sources */,
+				4507E9BC217B2628007434D4 /* AppDelegate.swift in Sources */,
+				4507E9DC217B3428007434D4 /* DataProtocols.swift in Sources */,
+				4507E9D0217B266D007434D4 /* ImageViewProtocols.swift in Sources */,
+				4507E9D6217B2F01007434D4 /* RedditImageViewBuilder.swift in Sources */,
+				4507E9D2217B27AA007434D4 /* ImageRequestResult.swift in Sources */,
+				4507E9DE217B5CDB007434D4 /* RedditImageURLProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4507EA2D217D9DDE007434D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4507EA34217D9DDE007434D4 /* ImageDownloaderTests.swift in Sources */,
+				45BB62D9217DDF7500249512 /* ImageViewPresenterTests.swift in Sources */,
+				451DE21F217DEB0700A181DE /* ImageViewControllerTests.swift in Sources */,
+				45E39D15217E26D70071050B /* RedditImageViewBuilderTests.swift in Sources */,
+				4507EA3E217D9F56007434D4 /* GeneratedMocks.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4507EA37217D9DDE007434D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4507E9B7217B2627007434D4 /* PugMe */;
+			targetProxy = 4507EA36217D9DDE007434D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4507E9BF217B2628007434D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4507E9C0217B2628007434D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4507E9C4217B262A007434D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4507E9C5217B262A007434D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4507E9C8217B262A007434D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4507E9C9217B262A007434D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4507E9CB217B262A007434D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CDE1654C0E66B2018F0FC42 /* Pods-PugMe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74S47PCZWX;
+				INFOPLIST_FILE = PugMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinkywonder.PugMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4507E9CC217B262A007434D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA56413F4B2777F4FDA8ACF6 /* Pods-PugMe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74S47PCZWX;
+				INFOPLIST_FILE = PugMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinkywonder.PugMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4507EA39217D9DDE007434D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A657D58FBC8C4154ABF55F7 /* Pods-PugMeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXZ3QW3P35;
+				INFOPLIST_FILE = PugMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinkywonder.PugMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PugMe.app/PugMe";
+			};
+			name = Debug;
+		};
+		4507EA3A217D9DDE007434D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEB72F12E268E2BB1DF3C45B /* Pods-PugMeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VXZ3QW3P35;
+				INFOPLIST_FILE = PugMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dinkywonder.PugMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PugMe.app/PugMe";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4507E9B3217B2627007434D4 /* Build configuration list for PBXProject "PugMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4507E9C8217B262A007434D4 /* Debug */,
+				4507E9C9217B262A007434D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4507E9CA217B262A007434D4 /* Build configuration list for PBXNativeTarget "PugMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4507E9CB217B262A007434D4 /* Debug */,
+				4507E9CC217B262A007434D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4507EA38217D9DDE007434D4 /* Build configuration list for PBXNativeTarget "PugMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4507EA39217D9DDE007434D4 /* Debug */,
+				4507EA3A217D9DDE007434D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4507E9B0217B2627007434D4 /* Project object */;
+}
