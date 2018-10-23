@@ -1,5 +1,5 @@
 //
-//  RedditImageViewBuilderTests.swift
+//  ImageViewBuilderTests.swift
 //  PugMeTests
 //
 //  Created by Roel Spruit on 22/10/2018.
@@ -10,10 +10,10 @@ import XCTest
 
 @testable import PugMe
 
-class RedditImageViewBuilderTests: XCTestCase {
+class ImageViewBuilderTests: XCTestCase {
 
     func testBuild() {
-        let builder = RedditImageViewBuilder(subreddit: "aww", clientId: "clientid")
+        let builder = ImageViewBuilder(subreddit: "aww", clientId: "clientid")
         let viewController = builder.build()
         
         XCTAssertTrue(viewController is ImageViewing)

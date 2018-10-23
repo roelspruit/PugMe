@@ -25,7 +25,7 @@
 		4507EA40217DAB2E007434D4 /* pug.png in Resources */ = {isa = PBXBuildFile; fileRef = 4507EA3F217DAB2E007434D4 /* pug.png */; };
 		451DE21F217DEB0700A181DE /* ImageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DE21E217DEB0700A181DE /* ImageViewControllerTests.swift */; };
 		45BB62D9217DDF7500249512 /* ImageViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB62D8217DDF7500249512 /* ImageViewPresenterTests.swift */; };
-		45E39D15217E26D70071050B /* RedditImageViewBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D14217E26D70071050B /* RedditImageViewBuilderTests.swift */; };
+		45E39D15217E26D70071050B /* ImageViewBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D14217E26D70071050B /* ImageViewBuilderTests.swift */; };
 		45E39D20217EF9400071050B /* RedditListingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D18217EF9400071050B /* RedditListingResponse.swift */; };
 		45E39D21217EF9400071050B /* RedditAccessTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D19217EF9400071050B /* RedditAccessTokenResponse.swift */; };
 		45E39D22217EF9400071050B /* RedditListingResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D1A217EF9400071050B /* RedditListingResponseData.swift */; };
@@ -70,7 +70,7 @@
 		4507EA3F217DAB2E007434D4 /* pug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pug.png; sourceTree = "<group>"; };
 		451DE21E217DEB0700A181DE /* ImageViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewControllerTests.swift; sourceTree = "<group>"; };
 		45BB62D8217DDF7500249512 /* ImageViewPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewPresenterTests.swift; sourceTree = "<group>"; };
-		45E39D14217E26D70071050B /* RedditImageViewBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditImageViewBuilderTests.swift; sourceTree = "<group>"; };
+		45E39D14217E26D70071050B /* ImageViewBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewBuilderTests.swift; sourceTree = "<group>"; };
 		45E39D18217EF9400071050B /* RedditListingResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditListingResponse.swift; sourceTree = "<group>"; };
 		45E39D19217EF9400071050B /* RedditAccessTokenResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditAccessTokenResponse.swift; sourceTree = "<group>"; };
 		45E39D1A217EF9400071050B /* RedditListingResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditListingResponseData.swift; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 				4507EA33217D9DDE007434D4 /* ImageDownloaderTests.swift */,
 				45BB62D8217DDF7500249512 /* ImageViewPresenterTests.swift */,
 				451DE21E217DEB0700A181DE /* ImageViewControllerTests.swift */,
-				45E39D14217E26D70071050B /* RedditImageViewBuilderTests.swift */,
+				45E39D14217E26D70071050B /* ImageViewBuilderTests.swift */,
 			);
 			path = PugMeTests;
 			sourceTree = "<group>";
@@ -337,7 +337,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Define output file. Change \"$PROJECT_DIR/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"$PROJECT_DIR/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"$INPUT_DIR/ImageView/ImageViewProtocols.swift\" \\\n\"$INPUT_DIR/Data/DataProtocols.swift\"\n\"$INPUT_DIR/RedditClient/RedditClientProtocols.swift\"\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+			shellScript = "# Define output file. Change \"$PROJECT_DIR/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"$PROJECT_DIR/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"$INPUT_DIR/ImageView/ImageViewProtocols.swift\" \\\n\"$INPUT_DIR/Data/DataProtocols.swift\" \\\n\"$INPUT_DIR/RedditClient/RedditClientProtocols.swift\"\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
 		};
 		7BF14CFC4E85FA64FEB45048 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -440,7 +440,7 @@
 				4507EA34217D9DDE007434D4 /* ImageDownloaderTests.swift in Sources */,
 				45BB62D9217DDF7500249512 /* ImageViewPresenterTests.swift in Sources */,
 				451DE21F217DEB0700A181DE /* ImageViewControllerTests.swift in Sources */,
-				45E39D15217E26D70071050B /* RedditImageViewBuilderTests.swift in Sources */,
+				45E39D15217E26D70071050B /* ImageViewBuilderTests.swift in Sources */,
 				4507EA3E217D9F56007434D4 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

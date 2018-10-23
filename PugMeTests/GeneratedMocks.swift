@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: PugMe/Data/DataProtocols.swift at 2018-10-23 06:35:04 +0000
+// MARK: - Mocks generated from file: PugMe/Data/DataProtocols.swift at 2018-10-23 06:55:31 +0000
 
 //
 //  DataProtocols.swift
@@ -46,6 +46,20 @@ class MockDataRequesting: DataRequesting, Cuckoo.ProtocolMock {
         
     }
     
+    // ["name": "getData", "returnSignature": "", "fullyQualifiedName": "getData(withRequest: URLRequest, handler: @escaping (Data?, Error?) -> Void)", "parameterSignature": "withRequest request: URLRequest, handler: @escaping (Data?, Error?) -> Void", "parameterSignatureWithoutNames": "request: URLRequest, handler: @escaping (Data?, Error?) -> Void", "inputTypes": "URLRequest, (Data?, Error?) -> Void", "isThrowing": false, "isInit": false, "isOverriding": false, "hasClosureParams": true, "@type": "ProtocolMethod", "accessibility": "", "parameterNames": "request, handler", "call": "withRequest: request, handler: handler", "parameters": [CuckooGeneratorFramework.MethodParameter(label: Optional("withRequest"), name: "request", type: "URLRequest", range: CountableRange(283..<314), nameRange: CountableRange(283..<294)), CuckooGeneratorFramework.MethodParameter(label: Optional("handler"), name: "handler", type: "@escaping (Data?, Error?) -> Void", range: CountableRange(316..<358), nameRange: CountableRange(316..<323))], "returnType": "Void", "isOptional": false, "escapingParameterNames": "request, handler", "stubFunction": "Cuckoo.ProtocolStubNoReturnFunction"]
+     func getData(withRequest request: URLRequest, handler: @escaping (Data?, Error?) -> Void)  {
+        
+            return cuckoo_manager.call("getData(withRequest: URLRequest, handler: @escaping (Data?, Error?) -> Void)",
+                parameters: (request, handler),
+                escapingParameters: (request, handler),
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.getData(withRequest: request, handler: handler))
+        
+    }
+    
 
 	struct __StubbingProxy_DataRequesting: Cuckoo.StubbingProxy {
 	    private let cuckoo_manager: Cuckoo.MockManager
@@ -58,6 +72,11 @@ class MockDataRequesting: DataRequesting, Cuckoo.ProtocolMock {
 	    func getData<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(fromUrl url: M1, handler: M2) -> Cuckoo.ProtocolStubNoReturnFunction<(URL, (Data?, Error?) -> Void)> where M1.MatchedType == URL, M2.MatchedType == (Data?, Error?) -> Void {
 	        let matchers: [Cuckoo.ParameterMatcher<(URL, (Data?, Error?) -> Void)>] = [wrap(matchable: url) { $0.0 }, wrap(matchable: handler) { $0.1 }]
 	        return .init(stub: cuckoo_manager.createStub(for: MockDataRequesting.self, method: "getData(fromUrl: URL, handler: @escaping (Data?, Error?) -> Void)", parameterMatchers: matchers))
+	    }
+	    
+	    func getData<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(withRequest request: M1, handler: M2) -> Cuckoo.ProtocolStubNoReturnFunction<(URLRequest, (Data?, Error?) -> Void)> where M1.MatchedType == URLRequest, M2.MatchedType == (Data?, Error?) -> Void {
+	        let matchers: [Cuckoo.ParameterMatcher<(URLRequest, (Data?, Error?) -> Void)>] = [wrap(matchable: request) { $0.0 }, wrap(matchable: handler) { $0.1 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockDataRequesting.self, method: "getData(withRequest: URLRequest, handler: @escaping (Data?, Error?) -> Void)", parameterMatchers: matchers))
 	    }
 	    
 	}
@@ -82,6 +101,12 @@ class MockDataRequesting: DataRequesting, Cuckoo.ProtocolMock {
 	        return cuckoo_manager.verify("getData(fromUrl: URL, handler: @escaping (Data?, Error?) -> Void)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
 	    }
 	    
+	    @discardableResult
+	    func getData<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(withRequest request: M1, handler: M2) -> Cuckoo.__DoNotUse<Void> where M1.MatchedType == URLRequest, M2.MatchedType == (Data?, Error?) -> Void {
+	        let matchers: [Cuckoo.ParameterMatcher<(URLRequest, (Data?, Error?) -> Void)>] = [wrap(matchable: request) { $0.0 }, wrap(matchable: handler) { $0.1 }]
+	        return cuckoo_manager.verify("getData(withRequest: URLRequest, handler: @escaping (Data?, Error?) -> Void)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
 	}
 
 }
@@ -96,10 +121,14 @@ class MockDataRequesting: DataRequesting, Cuckoo.ProtocolMock {
         return DefaultValueRegistry.defaultValue(for: Void.self)
     }
     
+     func getData(withRequest request: URLRequest, handler: @escaping (Data?, Error?) -> Void)  {
+        return DefaultValueRegistry.defaultValue(for: Void.self)
+    }
+    
 }
 
 
-// MARK: - Mocks generated from file: PugMe/ImageView/ImageViewProtocols.swift at 2018-10-23 06:35:04 +0000
+// MARK: - Mocks generated from file: PugMe/ImageView/ImageViewProtocols.swift at 2018-10-23 06:55:31 +0000
 
 //
 //  ImageViewProtocols.swift
@@ -626,6 +655,107 @@ class MockImageUrlProviding: ImageUrlProviding, Cuckoo.ProtocolMock {
 
     
      func getImageUrls(completion: @escaping ([URL]?) -> Void)  {
+        return DefaultValueRegistry.defaultValue(for: Void.self)
+    }
+    
+}
+
+
+// MARK: - Mocks generated from file: PugMe/RedditClient/RedditClientProtocols.swift at 2018-10-23 06:55:31 +0000
+
+//
+//  Protocols.swift
+//  RedditClient
+//
+//  Created by Roel Spruit on 22/10/2018.
+//  Copyright © 2018 DinkyWonder. All rights reserved.
+//
+
+import Cuckoo
+@testable import PugMe
+
+import Foundation
+
+class MockRedditClient: RedditClient, Cuckoo.ProtocolMock {
+    typealias MocksType = RedditClient
+    typealias Stubbing = __StubbingProxy_RedditClient
+    typealias Verification = __VerificationProxy_RedditClient
+
+    private var __defaultImplStub: RedditClient?
+
+    let cuckoo_manager = Cuckoo.MockManager.preconfiguredManager ?? Cuckoo.MockManager(hasParent: false)
+
+    func enableDefaultImplementation(_ stub: RedditClient) {
+        __defaultImplStub = stub
+        cuckoo_manager.enableDefaultStubImplementation()
+    }
+
+    
+
+    
+
+    
+    // ["name": "getNewListings", "returnSignature": "", "fullyQualifiedName": "getNewListings(subreddit: String, completion: @escaping (RedditListingResponse?) -> Void)", "parameterSignature": "subreddit: String, completion: @escaping (RedditListingResponse?) -> Void", "parameterSignatureWithoutNames": "subreddit: String, completion: @escaping (RedditListingResponse?) -> Void", "inputTypes": "String, (RedditListingResponse?) -> Void", "isThrowing": false, "isInit": false, "isOverriding": false, "hasClosureParams": true, "@type": "ProtocolMethod", "accessibility": "public", "parameterNames": "subreddit, completion", "call": "subreddit: subreddit, completion: completion", "parameters": [CuckooGeneratorFramework.MethodParameter(label: Optional("subreddit"), name: "subreddit", type: "String", range: CountableRange(219..<236), nameRange: CountableRange(219..<228)), CuckooGeneratorFramework.MethodParameter(label: Optional("completion"), name: "completion", type: "@escaping (RedditListingResponse?) -> Void", range: CountableRange(238..<292), nameRange: CountableRange(238..<248))], "returnType": "Void", "isOptional": false, "escapingParameterNames": "subreddit, completion", "stubFunction": "Cuckoo.ProtocolStubNoReturnFunction"]
+    public func getNewListings(subreddit: String, completion: @escaping (RedditListingResponse?) -> Void)  {
+        
+            return cuckoo_manager.call("getNewListings(subreddit: String, completion: @escaping (RedditListingResponse?) -> Void)",
+                parameters: (subreddit, completion),
+                escapingParameters: (subreddit, completion),
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.getNewListings(subreddit: subreddit, completion: completion))
+        
+    }
+    
+
+	struct __StubbingProxy_RedditClient: Cuckoo.StubbingProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	
+	    init(manager: Cuckoo.MockManager) {
+	        self.cuckoo_manager = manager
+	    }
+	    
+	    
+	    func getNewListings<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(subreddit: M1, completion: M2) -> Cuckoo.ProtocolStubNoReturnFunction<(String, (RedditListingResponse?) -> Void)> where M1.MatchedType == String, M2.MatchedType == (RedditListingResponse?) -> Void {
+	        let matchers: [Cuckoo.ParameterMatcher<(String, (RedditListingResponse?) -> Void)>] = [wrap(matchable: subreddit) { $0.0 }, wrap(matchable: completion) { $0.1 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockRedditClient.self, method: "getNewListings(subreddit: String, completion: @escaping (RedditListingResponse?) -> Void)", parameterMatchers: matchers))
+	    }
+	    
+	}
+
+	struct __VerificationProxy_RedditClient: Cuckoo.VerificationProxy {
+	    private let cuckoo_manager: Cuckoo.MockManager
+	    private let callMatcher: Cuckoo.CallMatcher
+	    private let sourceLocation: Cuckoo.SourceLocation
+	
+	    init(manager: Cuckoo.MockManager, callMatcher: Cuckoo.CallMatcher, sourceLocation: Cuckoo.SourceLocation) {
+	        self.cuckoo_manager = manager
+	        self.callMatcher = callMatcher
+	        self.sourceLocation = sourceLocation
+	    }
+	
+	    
+	
+	    
+	    @discardableResult
+	    func getNewListings<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(subreddit: M1, completion: M2) -> Cuckoo.__DoNotUse<Void> where M1.MatchedType == String, M2.MatchedType == (RedditListingResponse?) -> Void {
+	        let matchers: [Cuckoo.ParameterMatcher<(String, (RedditListingResponse?) -> Void)>] = [wrap(matchable: subreddit) { $0.0 }, wrap(matchable: completion) { $0.1 }]
+	        return cuckoo_manager.verify("getNewListings(subreddit: String, completion: @escaping (RedditListingResponse?) -> Void)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    }
+	    
+	}
+
+}
+
+ class RedditClientStub: RedditClient {
+    
+
+    
+
+    
+    public func getNewListings(subreddit: String, completion: @escaping (RedditListingResponse?) -> Void)  {
         return DefaultValueRegistry.defaultValue(for: Void.self)
     }
     
