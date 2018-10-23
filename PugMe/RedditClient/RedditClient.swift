@@ -8,15 +8,17 @@
 
 import Foundation
 
-public class Reddit: RedditClient {
+class Reddit: RedditClient {
     
     private let clientId: String
+    private let dataRequester: DataRequesting
     
-    public init(clientId: String) {
+    init(clientId: String, dataRequester: DataRequesting) {
         self.clientId = clientId
+        self.dataRequester = dataRequester
     }
     
-    public func getNewListings(subreddit: String, completion: @escaping (RedditListingResponse?) -> Void) {
+    func getNewListings(subreddit: String, completion: @escaping (RedditListingResponse?) -> Void) {
         
         let url = URL(string: "https://oauth.reddit.com/r/\(subreddit)/new?limit=100")!
         
@@ -30,7 +32,7 @@ public class Reddit: RedditClient {
             var request = URLRequest(url: url)
             request.addValue("bearer \(token)", forHTTPHeaderField: "Authorization")
             
-            let task = URLSession.shared.dataTask(with: request) { (data, _, error) -> Void in
+            self.dataRequester.getData(withRequest: request, handler: { (data, error) in
                 
                 guard let data = data else {
                     completion(nil)
@@ -40,8 +42,7 @@ public class Reddit: RedditClient {
                 let decoder = JSONDecoder()
                 let response = try? decoder.decode(RedditListingResponse.self, from: data)
                 completion(response)
-            }
-            task.resume()
+            })
         }
     }
     
@@ -56,7 +57,7 @@ public class Reddit: RedditClient {
         request.httpMethod = "POST"
         request.addValue(getBasicAuthHeader(login: clientId, password: ""), forHTTPHeaderField: "Authorization")
         
-        let task = URLSession.shared.dataTask(with: request) { (data, _, error) -> Void in
+        self.dataRequester.getData(withRequest: request, handler: { (data, error) in
             
             guard let data = data else {
                 completion(nil)
@@ -67,8 +68,7 @@ public class Reddit: RedditClient {
             let response = try? decoder.decode(RedditAccessTokenResponse.self, from: data)
             
             completion(response)
-        }
-        task.resume()
+        })
     }
     
     private func getBasicAuthHeader(login: String, password: String) -> String {

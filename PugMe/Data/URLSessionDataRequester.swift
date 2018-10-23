@@ -12,7 +12,18 @@ class URLSessionDataRequester: DataRequesting {
     
     func getData(fromUrl url: URL, handler: @escaping (Data?, Error?) -> Void) {
         let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
-            handler(data, error)
+            DispatchQueue.main.async {
+                handler(data, error)
+            }
+        }
+        task.resume()
+    }
+    
+    func getData(withRequest request: URLRequest, handler: @escaping (Data?, Error?) -> Void) {
+        let task = URLSession.shared.dataTask(with: request) { (data, _, error) in
+            DispatchQueue.main.async {
+                handler(data, error)
+            }
         }
         task.resume()
     }

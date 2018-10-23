@@ -8,14 +8,27 @@
 
 import Foundation
 import FBSnapshotTestCase
+import Cuckoo
 
 @testable import PugMe
 
 class ImageViewControllerTest: FBSnapshotTestCase {
     
+    var mockPresenter: MockImageViewPresenting!
+    var imageViewController: ImageViewController!
+    
     override func setUp() {
         super.setUp()
         recordMode = false
+        
+        mockPresenter = MockImageViewPresenting()
+        stub(mockPresenter) { (stub) in
+            when(stub.viewDidLoad()).thenDoNothing()
+            when(stub.tappedView()).thenDoNothing()
+        }
+        
+        imageViewController = ImageViewController(nibName: nil, bundle: nil)
+        imageViewController.presenter = mockPresenter
     }
     
     func testRefreshState() {
@@ -35,6 +48,16 @@ class ImageViewControllerTest: FBSnapshotTestCase {
         let imageViewController = ImageViewController(nibName: nil, bundle: nil)
         imageViewController.showImage(image)
         FBSnapshotVerifyView(imageViewController.view)
+    }
+    
+    func testViewDidLoadShouldCallPresenter() {
+        imageViewController.viewDidLoad()
+        verify(mockPresenter).viewDidLoad()
+    }
+    
+    func testTappingViewShouldCallPresenter() {
+        imageViewController.tapped()
+        verify(mockPresenter).tappedView()
     }
 }
 

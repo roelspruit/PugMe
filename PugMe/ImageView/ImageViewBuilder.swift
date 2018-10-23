@@ -1,5 +1,5 @@
 //
-//  RedditImageViewBuilder.swift
+//  ImageViewBuilder.swift
 //  PugMe
 //
 //  Created by Roel Spruit on 20/10/2018.
@@ -8,9 +8,8 @@
 
 import Foundation
 import UIKit
-import RedditClient
 
-struct RedditImageViewBuilder: ImageViewBuilding {
+struct ImageViewBuilder: ImageViewBuilding {
     
     private let subreddit: String
     private let clientId: String
@@ -24,7 +23,8 @@ struct RedditImageViewBuilder: ImageViewBuilding {
         
         let dataRequester = URLSessionDataRequester()
         let imageDownloader = ImageDownloader(dataRequester: dataRequester)
-        let imageUrlProvider = RedditImageURLProvider(subreddit: subreddit, client: Reddit(clientId: clientId))
+        let redditClient = Reddit(clientId: clientId, dataRequester: dataRequester)
+        let imageUrlProvider = RedditImageURLProvider(subreddit: subreddit, client: redditClient)
         
         let view = ImageViewController()
         let presenter = ImageViewPresenter(view: view,

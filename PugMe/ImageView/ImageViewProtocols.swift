@@ -14,7 +14,7 @@ protocol ImageViewBuilding {
 }
 
 protocol ImageDownloading {
-    func getImage(fromUrl url: URL, handler: @escaping (ImageRequestResult) -> Void)
+    func getImage(fromUrl url: URL, handler: @escaping (ImageDownloadResult) -> Void)
 }
 
 protocol ImageViewing {

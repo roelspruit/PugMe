@@ -41,7 +41,7 @@ class ImageViewPresenterTests: XCTestCase {
         let testImage = UIImage(named: "pug", in: Bundle.init(for: ImageDownloaderTests.self), compatibleWith: nil)!
         stub(mockImageDownloader) { (stub) in
             when(stub.getImage(fromUrl: any(), handler: any())).then({ (url, completion) in
-                completion(ImageRequestResult.success(testImage))
+                completion(ImageDownloadResult.success(testImage))
             })
         }
     }
@@ -74,7 +74,9 @@ class ImageViewPresenterTests: XCTestCase {
         
         stub(mockImageUrlProvider) { (stub) in
             when(stub.getImageUrls(completion: any())).then({ (completion) in
-                completion([URL(string: "http://www.nu.nl")!, URL(string: "http://www.nu2.nl")!, URL(string: "http://www.nu3.nl")!])
+                completion([URL(string: "http://www.nu.nl")!,
+                            URL(string: "http://www.nu2.nl")!,
+                            URL(string: "http://www.nu3.nl")!])
             })
         }
         
@@ -112,7 +114,7 @@ class ImageViewPresenterTests: XCTestCase {
         
         stub(mockImageDownloader) { (stub) in
             when(stub.getImage(fromUrl: any(), handler: any())).then({ (url, completion) in
-                completion(ImageRequestResult.failure(ImageRequestError.generic))
+                completion(ImageDownloadResult.failure(ImageDownloadError.generic))
             })
         }
         

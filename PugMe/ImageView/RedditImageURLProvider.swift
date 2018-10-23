@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import RedditClient
 
 class RedditImageURLProvider: ImageUrlProviding {
 
@@ -22,18 +21,15 @@ class RedditImageURLProvider: ImageUrlProviding {
     func getImageUrls(completion: @escaping ([URL]?) -> Void) {
         
         reddit.getNewListings(subreddit: subreddit) { (response) in
-            
-            DispatchQueue.main.async {
                 
-                guard let response = response else {
-                    completion(nil)
-                    return
-                }
-                
-                let urls = response.data.children.compactMap({ $0.data.url })
-                
-                completion(urls)
+            guard let response = response else {
+                completion(nil)
+                return
             }
+            
+            let urls = response.data.children.compactMap({ $0.data.url })
+            
+            completion(urls)
         }
     }
 }

@@ -15,20 +15,24 @@
 		4507E9C6217B262A007434D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507E9C4217B262A007434D4 /* LaunchScreen.storyboard */; };
 		4507E9CE217B2656007434D4 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9CD217B2656007434D4 /* ImageDownloader.swift */; };
 		4507E9D0217B266D007434D4 /* ImageViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9CF217B266D007434D4 /* ImageViewProtocols.swift */; };
-		4507E9D2217B27AA007434D4 /* ImageRequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9D1217B27AA007434D4 /* ImageRequestResult.swift */; };
 		4507E9D4217B2EB3007434D4 /* URLSessionDataRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9D3217B2EB3007434D4 /* URLSessionDataRequester.swift */; };
-		4507E9D6217B2F01007434D4 /* RedditImageViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9D5217B2F01007434D4 /* RedditImageViewBuilder.swift */; };
+		4507E9D6217B2F01007434D4 /* ImageViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9D5217B2F01007434D4 /* ImageViewBuilder.swift */; };
 		4507E9D8217B3004007434D4 /* ImageViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9D7217B3004007434D4 /* ImageViewPresenter.swift */; };
 		4507E9DC217B3428007434D4 /* DataProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9DB217B3428007434D4 /* DataProtocols.swift */; };
 		4507E9DE217B5CDB007434D4 /* RedditImageURLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9DD217B5CDB007434D4 /* RedditImageURLProvider.swift */; };
-		4507EA28217BA66B007434D4 /* RedditClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4507EA26217B7C82007434D4 /* RedditClient.framework */; };
-		4507EA29217BA66B007434D4 /* RedditClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4507EA26217B7C82007434D4 /* RedditClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4507EA34217D9DDE007434D4 /* ImageDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EA33217D9DDE007434D4 /* ImageDownloaderTests.swift */; };
 		4507EA3E217D9F56007434D4 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EA3D217D9F56007434D4 /* GeneratedMocks.swift */; };
 		4507EA40217DAB2E007434D4 /* pug.png in Resources */ = {isa = PBXBuildFile; fileRef = 4507EA3F217DAB2E007434D4 /* pug.png */; };
 		451DE21F217DEB0700A181DE /* ImageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451DE21E217DEB0700A181DE /* ImageViewControllerTests.swift */; };
 		45BB62D9217DDF7500249512 /* ImageViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BB62D8217DDF7500249512 /* ImageViewPresenterTests.swift */; };
 		45E39D15217E26D70071050B /* RedditImageViewBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D14217E26D70071050B /* RedditImageViewBuilderTests.swift */; };
+		45E39D20217EF9400071050B /* RedditListingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D18217EF9400071050B /* RedditListingResponse.swift */; };
+		45E39D21217EF9400071050B /* RedditAccessTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D19217EF9400071050B /* RedditAccessTokenResponse.swift */; };
+		45E39D22217EF9400071050B /* RedditListingResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D1A217EF9400071050B /* RedditListingResponseData.swift */; };
+		45E39D23217EF9400071050B /* RedditListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D1B217EF9400071050B /* RedditListing.swift */; };
+		45E39D24217EF9400071050B /* RedditListingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D1C217EF9400071050B /* RedditListingData.swift */; };
+		45E39D25217EF9400071050B /* RedditClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D1D217EF9400071050B /* RedditClient.swift */; };
+		45E39D26217EF9400071050B /* RedditClientProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D1E217EF9400071050B /* RedditClientProtocols.swift */; };
 		961FB3FEF0AC47A3E18B8132 /* Pods_PugMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A694F202B27342F7DBBBDCD4 /* Pods_PugMe.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,20 +46,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		4507EA2A217BA66B007434D4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4507EA29217BA66B007434D4 /* RedditClient.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		0CDE1654C0E66B2018F0FC42 /* Pods-PugMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PugMe/Pods-PugMe.debug.xcconfig"; sourceTree = "<group>"; };
 		4507E9B8217B2627007434D4 /* PugMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PugMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,9 +57,8 @@
 		4507E9C7217B262A007434D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4507E9CD217B2656007434D4 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		4507E9CF217B266D007434D4 /* ImageViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewProtocols.swift; sourceTree = "<group>"; };
-		4507E9D1217B27AA007434D4 /* ImageRequestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequestResult.swift; sourceTree = "<group>"; };
 		4507E9D3217B2EB3007434D4 /* URLSessionDataRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataRequester.swift; sourceTree = "<group>"; };
-		4507E9D5217B2F01007434D4 /* RedditImageViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditImageViewBuilder.swift; sourceTree = "<group>"; };
+		4507E9D5217B2F01007434D4 /* ImageViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewBuilder.swift; sourceTree = "<group>"; };
 		4507E9D7217B3004007434D4 /* ImageViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewPresenter.swift; sourceTree = "<group>"; };
 		4507E9DB217B3428007434D4 /* DataProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProtocols.swift; sourceTree = "<group>"; };
 		4507E9DD217B5CDB007434D4 /* RedditImageURLProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditImageURLProvider.swift; sourceTree = "<group>"; };
@@ -82,6 +71,13 @@
 		451DE21E217DEB0700A181DE /* ImageViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewControllerTests.swift; sourceTree = "<group>"; };
 		45BB62D8217DDF7500249512 /* ImageViewPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewPresenterTests.swift; sourceTree = "<group>"; };
 		45E39D14217E26D70071050B /* RedditImageViewBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditImageViewBuilderTests.swift; sourceTree = "<group>"; };
+		45E39D18217EF9400071050B /* RedditListingResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditListingResponse.swift; sourceTree = "<group>"; };
+		45E39D19217EF9400071050B /* RedditAccessTokenResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditAccessTokenResponse.swift; sourceTree = "<group>"; };
+		45E39D1A217EF9400071050B /* RedditListingResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditListingResponseData.swift; sourceTree = "<group>"; };
+		45E39D1B217EF9400071050B /* RedditListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditListing.swift; sourceTree = "<group>"; };
+		45E39D1C217EF9400071050B /* RedditListingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditListingData.swift; sourceTree = "<group>"; };
+		45E39D1D217EF9400071050B /* RedditClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditClient.swift; sourceTree = "<group>"; };
+		45E39D1E217EF9400071050B /* RedditClientProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditClientProtocols.swift; sourceTree = "<group>"; };
 		8A657D58FBC8C4154ABF55F7 /* Pods-PugMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PugMeTests/Pods-PugMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A694F202B27342F7DBBBDCD4 /* Pods_PugMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PugMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA56413F4B2777F4FDA8ACF6 /* Pods-PugMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-PugMe/Pods-PugMe.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,7 +90,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4507EA28217BA66B007434D4 /* RedditClient.framework in Frameworks */,
 				961FB3FEF0AC47A3E18B8132 /* Pods_PugMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +138,7 @@
 		4507E9BA217B2627007434D4 /* PugMe */ = {
 			isa = PBXGroup;
 			children = (
+				45E39D16217EF9400071050B /* RedditClient */,
 				4507E9DA217B33C3007434D4 /* Data */,
 				4507E9D9217B337F007434D4 /* ImageView */,
 				4507E9BB217B2628007434D4 /* AppDelegate.swift */,
@@ -158,9 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				4507E9DD217B5CDB007434D4 /* RedditImageURLProvider.swift */,
-				4507E9D5217B2F01007434D4 /* RedditImageViewBuilder.swift */,
+				4507E9D5217B2F01007434D4 /* ImageViewBuilder.swift */,
 				4507E9CD217B2656007434D4 /* ImageDownloader.swift */,
-				4507E9D1217B27AA007434D4 /* ImageRequestResult.swift */,
 				4507E9CF217B266D007434D4 /* ImageViewProtocols.swift */,
 				4507E9BD217B2628007434D4 /* ImageViewController.swift */,
 				4507E9D7217B3004007434D4 /* ImageViewPresenter.swift */,
@@ -191,6 +186,28 @@
 			path = PugMeTests;
 			sourceTree = "<group>";
 		};
+		45E39D16217EF9400071050B /* RedditClient */ = {
+			isa = PBXGroup;
+			children = (
+				45E39D17217EF9400071050B /* Models */,
+				45E39D1D217EF9400071050B /* RedditClient.swift */,
+				45E39D1E217EF9400071050B /* RedditClientProtocols.swift */,
+			);
+			path = RedditClient;
+			sourceTree = "<group>";
+		};
+		45E39D17217EF9400071050B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45E39D18217EF9400071050B /* RedditListingResponse.swift */,
+				45E39D19217EF9400071050B /* RedditAccessTokenResponse.swift */,
+				45E39D1A217EF9400071050B /* RedditListingResponseData.swift */,
+				45E39D1B217EF9400071050B /* RedditListing.swift */,
+				45E39D1C217EF9400071050B /* RedditListingData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F383F7BBE50C490657BBCB43 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +230,6 @@
 				4507E9B4217B2627007434D4 /* Sources */,
 				4507E9B5217B2627007434D4 /* Frameworks */,
 				4507E9B6217B2627007434D4 /* Resources */,
-				4507EA2A217BA66B007434D4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,7 +337,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Define output file. Change \"$PROJECT_DIR/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"$PROJECT_DIR/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"$INPUT_DIR/ImageView/ImageViewProtocols.swift\" \\\n\"$INPUT_DIR/Data/DataProtocols.swift\"\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
+			shellScript = "# Define output file. Change \"$PROJECT_DIR/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"$PROJECT_DIR/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"$INPUT_DIR/ImageView/ImageViewProtocols.swift\" \\\n\"$INPUT_DIR/Data/DataProtocols.swift\"\n\"$INPUT_DIR/RedditClient/RedditClientProtocols.swift\"\n\n# After running once, locate `GeneratedMocks.swift` and drag it into your Xcode test target group.\n";
 		};
 		7BF14CFC4E85FA64FEB45048 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -398,16 +414,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E39D24217EF9400071050B /* RedditListingData.swift in Sources */,
 				4507E9CE217B2656007434D4 /* ImageDownloader.swift in Sources */,
+				45E39D25217EF9400071050B /* RedditClient.swift in Sources */,
+				45E39D22217EF9400071050B /* RedditListingResponseData.swift in Sources */,
+				45E39D20217EF9400071050B /* RedditListingResponse.swift in Sources */,
 				4507E9D8217B3004007434D4 /* ImageViewPresenter.swift in Sources */,
 				4507E9D4217B2EB3007434D4 /* URLSessionDataRequester.swift in Sources */,
 				4507E9BE217B2628007434D4 /* ImageViewController.swift in Sources */,
+				45E39D23217EF9400071050B /* RedditListing.swift in Sources */,
 				4507E9BC217B2628007434D4 /* AppDelegate.swift in Sources */,
+				45E39D21217EF9400071050B /* RedditAccessTokenResponse.swift in Sources */,
 				4507E9DC217B3428007434D4 /* DataProtocols.swift in Sources */,
 				4507E9D0217B266D007434D4 /* ImageViewProtocols.swift in Sources */,
-				4507E9D6217B2F01007434D4 /* RedditImageViewBuilder.swift in Sources */,
-				4507E9D2217B27AA007434D4 /* ImageRequestResult.swift in Sources */,
+				4507E9D6217B2F01007434D4 /* ImageViewBuilder.swift in Sources */,
 				4507E9DE217B5CDB007434D4 /* RedditImageURLProvider.swift in Sources */,
+				45E39D26217EF9400071050B /* RedditClientProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

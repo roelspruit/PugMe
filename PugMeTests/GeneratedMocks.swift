@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: PugMe/Data/DataProtocols.swift at 2018-10-22 15:44:21 +0000
+// MARK: - Mocks generated from file: PugMe/Data/DataProtocols.swift at 2018-10-23 06:35:04 +0000
 
 //
 //  DataProtocols.swift
@@ -99,7 +99,7 @@ class MockDataRequesting: DataRequesting, Cuckoo.ProtocolMock {
 }
 
 
-// MARK: - Mocks generated from file: PugMe/ImageView/ImageViewProtocols.swift at 2018-10-22 15:44:21 +0000
+// MARK: - Mocks generated from file: PugMe/ImageView/ImageViewProtocols.swift at 2018-10-23 06:35:04 +0000
 
 //
 //  ImageViewProtocols.swift
@@ -220,10 +220,10 @@ class MockImageDownloading: ImageDownloading, Cuckoo.ProtocolMock {
     
 
     
-    // ["name": "getImage", "returnSignature": "", "fullyQualifiedName": "getImage(fromUrl: URL, handler: @escaping (ImageRequestResult) -> Void)", "parameterSignature": "fromUrl url: URL, handler: @escaping (ImageRequestResult) -> Void", "parameterSignatureWithoutNames": "url: URL, handler: @escaping (ImageRequestResult) -> Void", "inputTypes": "URL, (ImageRequestResult) -> Void", "isThrowing": false, "isInit": false, "isOverriding": false, "hasClosureParams": true, "@type": "ProtocolMethod", "accessibility": "", "parameterNames": "url, handler", "call": "fromUrl: url, handler: handler", "parameters": [CuckooGeneratorFramework.MethodParameter(label: Optional("fromUrl"), name: "url", type: "URL", range: CountableRange(294..<310), nameRange: CountableRange(294..<301)), CuckooGeneratorFramework.MethodParameter(label: Optional("handler"), name: "handler", type: "@escaping (ImageRequestResult) -> Void", range: CountableRange(312..<359), nameRange: CountableRange(312..<319))], "returnType": "Void", "isOptional": false, "escapingParameterNames": "url, handler", "stubFunction": "Cuckoo.ProtocolStubNoReturnFunction"]
-     func getImage(fromUrl url: URL, handler: @escaping (ImageRequestResult) -> Void)  {
+    // ["name": "getImage", "returnSignature": "", "fullyQualifiedName": "getImage(fromUrl: URL, handler: @escaping (ImageDownloadResult) -> Void)", "parameterSignature": "fromUrl url: URL, handler: @escaping (ImageDownloadResult) -> Void", "parameterSignatureWithoutNames": "url: URL, handler: @escaping (ImageDownloadResult) -> Void", "inputTypes": "URL, (ImageDownloadResult) -> Void", "isThrowing": false, "isInit": false, "isOverriding": false, "hasClosureParams": true, "@type": "ProtocolMethod", "accessibility": "", "parameterNames": "url, handler", "call": "fromUrl: url, handler: handler", "parameters": [CuckooGeneratorFramework.MethodParameter(label: Optional("fromUrl"), name: "url", type: "URL", range: CountableRange(294..<310), nameRange: CountableRange(294..<301)), CuckooGeneratorFramework.MethodParameter(label: Optional("handler"), name: "handler", type: "@escaping (ImageDownloadResult) -> Void", range: CountableRange(312..<360), nameRange: CountableRange(312..<319))], "returnType": "Void", "isOptional": false, "escapingParameterNames": "url, handler", "stubFunction": "Cuckoo.ProtocolStubNoReturnFunction"]
+     func getImage(fromUrl url: URL, handler: @escaping (ImageDownloadResult) -> Void)  {
         
-            return cuckoo_manager.call("getImage(fromUrl: URL, handler: @escaping (ImageRequestResult) -> Void)",
+            return cuckoo_manager.call("getImage(fromUrl: URL, handler: @escaping (ImageDownloadResult) -> Void)",
                 parameters: (url, handler),
                 escapingParameters: (url, handler),
                 superclassCall:
@@ -243,9 +243,9 @@ class MockImageDownloading: ImageDownloading, Cuckoo.ProtocolMock {
 	    }
 	    
 	    
-	    func getImage<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(fromUrl url: M1, handler: M2) -> Cuckoo.ProtocolStubNoReturnFunction<(URL, (ImageRequestResult) -> Void)> where M1.MatchedType == URL, M2.MatchedType == (ImageRequestResult) -> Void {
-	        let matchers: [Cuckoo.ParameterMatcher<(URL, (ImageRequestResult) -> Void)>] = [wrap(matchable: url) { $0.0 }, wrap(matchable: handler) { $0.1 }]
-	        return .init(stub: cuckoo_manager.createStub(for: MockImageDownloading.self, method: "getImage(fromUrl: URL, handler: @escaping (ImageRequestResult) -> Void)", parameterMatchers: matchers))
+	    func getImage<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(fromUrl url: M1, handler: M2) -> Cuckoo.ProtocolStubNoReturnFunction<(URL, (ImageDownloadResult) -> Void)> where M1.MatchedType == URL, M2.MatchedType == (ImageDownloadResult) -> Void {
+	        let matchers: [Cuckoo.ParameterMatcher<(URL, (ImageDownloadResult) -> Void)>] = [wrap(matchable: url) { $0.0 }, wrap(matchable: handler) { $0.1 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockImageDownloading.self, method: "getImage(fromUrl: URL, handler: @escaping (ImageDownloadResult) -> Void)", parameterMatchers: matchers))
 	    }
 	    
 	}
@@ -265,9 +265,9 @@ class MockImageDownloading: ImageDownloading, Cuckoo.ProtocolMock {
 	
 	    
 	    @discardableResult
-	    func getImage<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(fromUrl url: M1, handler: M2) -> Cuckoo.__DoNotUse<Void> where M1.MatchedType == URL, M2.MatchedType == (ImageRequestResult) -> Void {
-	        let matchers: [Cuckoo.ParameterMatcher<(URL, (ImageRequestResult) -> Void)>] = [wrap(matchable: url) { $0.0 }, wrap(matchable: handler) { $0.1 }]
-	        return cuckoo_manager.verify("getImage(fromUrl: URL, handler: @escaping (ImageRequestResult) -> Void)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    func getImage<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(fromUrl url: M1, handler: M2) -> Cuckoo.__DoNotUse<Void> where M1.MatchedType == URL, M2.MatchedType == (ImageDownloadResult) -> Void {
+	        let matchers: [Cuckoo.ParameterMatcher<(URL, (ImageDownloadResult) -> Void)>] = [wrap(matchable: url) { $0.0 }, wrap(matchable: handler) { $0.1 }]
+	        return cuckoo_manager.verify("getImage(fromUrl: URL, handler: @escaping (ImageDownloadResult) -> Void)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
 	    }
 	    
 	}
@@ -280,7 +280,7 @@ class MockImageDownloading: ImageDownloading, Cuckoo.ProtocolMock {
     
 
     
-     func getImage(fromUrl url: URL, handler: @escaping (ImageRequestResult) -> Void)  {
+     func getImage(fromUrl url: URL, handler: @escaping (ImageDownloadResult) -> Void)  {
         return DefaultValueRegistry.defaultValue(for: Void.self)
     }
     
@@ -306,7 +306,7 @@ class MockImageViewing: ImageViewing, Cuckoo.ProtocolMock {
     
 
     
-    // ["name": "showImage", "returnSignature": "", "fullyQualifiedName": "showImage(_: UIImage)", "parameterSignature": "_ image: UIImage", "parameterSignatureWithoutNames": "image: UIImage", "inputTypes": "UIImage", "isThrowing": false, "isInit": false, "isOverriding": false, "hasClosureParams": false, "@type": "ProtocolMethod", "accessibility": "", "parameterNames": "image", "call": "image", "parameters": [CuckooGeneratorFramework.MethodParameter(label: nil, name: "image", type: "UIImage", range: CountableRange(407..<423), nameRange: CountableRange(0..<0))], "returnType": "Void", "isOptional": false, "escapingParameterNames": "image", "stubFunction": "Cuckoo.ProtocolStubNoReturnFunction"]
+    // ["name": "showImage", "returnSignature": "", "fullyQualifiedName": "showImage(_: UIImage)", "parameterSignature": "_ image: UIImage", "parameterSignatureWithoutNames": "image: UIImage", "inputTypes": "UIImage", "isThrowing": false, "isInit": false, "isOverriding": false, "hasClosureParams": false, "@type": "ProtocolMethod", "accessibility": "", "parameterNames": "image", "call": "image", "parameters": [CuckooGeneratorFramework.MethodParameter(label: nil, name: "image", type: "UIImage", range: CountableRange(408..<424), nameRange: CountableRange(0..<0))], "returnType": "Void", "isOptional": false, "escapingParameterNames": "image", "stubFunction": "Cuckoo.ProtocolStubNoReturnFunction"]
      func showImage(_ image: UIImage)  {
         
             return cuckoo_manager.call("showImage(_: UIImage)",
@@ -565,7 +565,7 @@ class MockImageUrlProviding: ImageUrlProviding, Cuckoo.ProtocolMock {
     
 
     
-    // ["name": "getImageUrls", "returnSignature": "", "fullyQualifiedName": "getImageUrls(completion: @escaping ([URL]?) -> Void)", "parameterSignature": "completion: @escaping ([URL]?) -> Void", "parameterSignatureWithoutNames": "completion: @escaping ([URL]?) -> Void", "inputTypes": "([URL]?) -> Void", "isThrowing": false, "isInit": false, "isOverriding": false, "hasClosureParams": true, "@type": "ProtocolMethod", "accessibility": "", "parameterNames": "completion", "call": "completion: completion", "parameters": [CuckooGeneratorFramework.MethodParameter(label: Optional("completion"), name: "completion", type: "@escaping ([URL]?) -> Void", range: CountableRange(607..<645), nameRange: CountableRange(607..<617))], "returnType": "Void", "isOptional": false, "escapingParameterNames": "completion", "stubFunction": "Cuckoo.ProtocolStubNoReturnFunction"]
+    // ["name": "getImageUrls", "returnSignature": "", "fullyQualifiedName": "getImageUrls(completion: @escaping ([URL]?) -> Void)", "parameterSignature": "completion: @escaping ([URL]?) -> Void", "parameterSignatureWithoutNames": "completion: @escaping ([URL]?) -> Void", "inputTypes": "([URL]?) -> Void", "isThrowing": false, "isInit": false, "isOverriding": false, "hasClosureParams": true, "@type": "ProtocolMethod", "accessibility": "", "parameterNames": "completion", "call": "completion: completion", "parameters": [CuckooGeneratorFramework.MethodParameter(label: Optional("completion"), name: "completion", type: "@escaping ([URL]?) -> Void", range: CountableRange(608..<646), nameRange: CountableRange(608..<618))], "returnType": "Void", "isOptional": false, "escapingParameterNames": "completion", "stubFunction": "Cuckoo.ProtocolStubNoReturnFunction"]
      func getImageUrls(completion: @escaping ([URL]?) -> Void)  {
         
             return cuckoo_manager.call("getImageUrls(completion: @escaping ([URL]?) -> Void)",

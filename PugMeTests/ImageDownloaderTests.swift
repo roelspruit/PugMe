@@ -24,7 +24,7 @@ class ImageDownloaderTests: XCTestCase {
         
         stub(mockDataRequester) { (stub) in
             when(stub.getData(fromUrl: any(), handler: any())).then({ (url, handler) in
-                handler(nil, ImageRequestError.generic)
+                handler(nil, ImageDownloadError.generic)
             })
         }
         
@@ -33,7 +33,7 @@ class ImageDownloaderTests: XCTestCase {
             
             switch result {
                 case .failure(let error):
-                    if case ImageRequestError.generic = error {
+                    if case ImageDownloadError.generic = error {
                         print()
                     } else {
                         XCTFail("Returned error is incorrect")
@@ -60,7 +60,7 @@ class ImageDownloaderTests: XCTestCase {
             
             switch result {
                 case .failure(let error):
-                    if case ImageRequestError.generic = error {
+                    if case ImageDownloadError.generic = error {
                         print()
                     } else {
                         XCTFail("Returned error is incorrect")

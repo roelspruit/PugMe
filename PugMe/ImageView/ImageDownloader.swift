@@ -9,6 +9,15 @@
 import Foundation
 import UIKit
 
+enum ImageDownloadResult {
+    case success(UIImage)
+    case failure(Error)
+}
+
+enum ImageDownloadError: Error {
+    case generic
+}
+
 class ImageDownloader: ImageDownloading {
     
     private let dataRequester: DataRequesting
@@ -17,23 +26,21 @@ class ImageDownloader: ImageDownloading {
         self.dataRequester = dataRequester
     }
     
-    func getImage(fromUrl url: URL, handler: @escaping (ImageRequestResult) -> Void) {
+    func getImage(fromUrl url: URL, handler: @escaping (ImageDownloadResult) -> Void) {
         
         dataRequester.getData(fromUrl: url) { (data, error) in
             
-            DispatchQueue.main.async {
-                if let error = error {
-                    handler(ImageRequestResult.failure(error))
-                    return
-                }
-                
-                if let data = data, let image = UIImage(data: data) {
-                    handler(ImageRequestResult.success(image))
-                    return
-                }
-                
-                handler(ImageRequestResult.failure(ImageRequestError.generic))
+            if let error = error {
+                handler(ImageDownloadResult.failure(error))
+                return
             }
+            
+            if let data = data, let image = UIImage(data: data) {
+                handler(ImageDownloadResult.success(image))
+                return
+            }
+            
+            handler(ImageDownloadResult.failure(ImageDownloadError.generic))
         }
     }
 }
