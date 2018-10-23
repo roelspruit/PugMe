@@ -54,7 +54,7 @@ class ImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //presenter?.viewDidLoad()
+        presenter?.viewDidLoad()
     }
     
     @objc func tapped() {
