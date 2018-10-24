@@ -13,10 +13,6 @@ protocol ImageViewBuilding {
     func build() -> UIViewController
 }
 
-protocol ImageDownloading {
-    func getImage(fromUrl url: URL, handler: @escaping (ImageDownloadResult) -> Void)
-}
-
 protocol ImageViewing {
     func showImage(_ image: UIImage)
     func showRefreshState()
@@ -30,4 +26,8 @@ protocol ImageViewPresenting {
 
 protocol ImageUrlProviding {
     func getImageUrls(completion: @escaping ([URL]?) -> Void)
+}
+
+protocol ImageDownloading {
+    func getImage(fromUrl url: URL, handler: @escaping (ImageDownloadResult) -> Void)
 }

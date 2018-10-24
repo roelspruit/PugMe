@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: PugMe/Data/DataProtocols.swift at 2018-10-23 06:55:31 +0000
+// MARK: - Mocks generated from file: PugMe/Data/DataProtocols.swift at 2018-10-23 06:56:58 +0000
 
 //
 //  DataProtocols.swift
@@ -128,7 +128,7 @@ class MockDataRequesting: DataRequesting, Cuckoo.ProtocolMock {
 }
 
 
-// MARK: - Mocks generated from file: PugMe/ImageView/ImageViewProtocols.swift at 2018-10-23 06:55:31 +0000
+// MARK: - Mocks generated from file: PugMe/ImageView/ImageViewProtocols.swift at 2018-10-23 06:56:58 +0000
 
 //
 //  ImageViewProtocols.swift
@@ -661,7 +661,7 @@ class MockImageUrlProviding: ImageUrlProviding, Cuckoo.ProtocolMock {
 }
 
 
-// MARK: - Mocks generated from file: PugMe/RedditClient/RedditClientProtocols.swift at 2018-10-23 06:55:31 +0000
+// MARK: - Mocks generated from file: PugMe/RedditClient/RedditClientProtocols.swift at 2018-10-23 06:56:58 +0000
 
 //
 //  Protocols.swift
