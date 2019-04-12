@@ -8,15 +8,7 @@
 
 import Foundation
 import UIKit
-
-enum ImageDownloadResult {
-    case success(UIImage)
-    case failure(Error)
-}
-
-enum ImageDownloadError: Error {
-    case generic
-}
+import UpdatingImageView
 
 class ImageDownloader: ImageDownloading {
     

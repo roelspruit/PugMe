@@ -7,22 +7,31 @@
 //
 
 import UIKit
+import UpdatingImageView
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
+    
+    private let redditClientId = "HHkDDGxz5ygrxw"
+    private let subreddit = "pugs"
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let builder = ImageViewBuilder(subreddit: "pugs", clientId: "INSERT_REDDIT_CLIENT_ID_HERE")
+        let dataRequester = URLSessionDataRequester()
+        let imageDownloader = ImageDownloader(dataRequester: dataRequester)
+        let redditClient = Reddit(clientId: redditClientId, dataRequester: dataRequester)
+        let imageUrlProvider = RedditImageURLProvider(subreddit: subreddit, client: redditClient)
+        let imageViewBuilder = ImageViewBuilder()
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = builder.build()
+        self.window?.rootViewController = imageViewBuilder.build(imageDownloader: imageDownloader,
+                                                                 imageUrlProvider: imageUrlProvider)
         self.window?.makeKeyAndVisible()
         
         return true
     }
-
+    
 }
 

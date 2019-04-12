@@ -28,7 +28,7 @@ class ImageViewPresenter {
         self.imageUrlProvider = imageUrlProvider
     }
     
-    fileprivate func getNextImage() {
+    private func getNextImage() {
         
         if let url = unseenImageUrls.randomElement() {
             getImage(fromUrl: url)

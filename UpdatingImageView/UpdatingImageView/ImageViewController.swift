@@ -12,9 +12,9 @@ class ImageViewController: UIViewController {
     
     var presenter: ImageViewPresenting?
     
-    fileprivate let errorLabel = UILabel()
-    fileprivate let imageView = UIImageView()
-    fileprivate let activityIndicatorView = UIActivityIndicatorView(style: .whiteLarge)
+    private let errorLabel = UILabel()
+    private let imageView = UIImageView()
+    private let activityIndicatorView = UIActivityIndicatorView(style: .whiteLarge)
 
     override func loadView() {
         super.loadView()
@@ -39,13 +39,19 @@ class ImageViewController: UIViewController {
         errorLabel.numberOfLines = 0
         view.addSubview(errorLabel)
         
+        setupConstraints()
+    }
+    
+    private func setupConstraints() {
         NSLayoutConstraint.activate([
             errorLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             errorLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20),
             errorLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20),
             
-            imageView.widthAnchor.constraint(equalTo: view.widthAnchor),
-            imageView.heightAnchor.constraint(equalTo: view.heightAnchor),
+            imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            imageView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            imageView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+            imageView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
             
             activityIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
