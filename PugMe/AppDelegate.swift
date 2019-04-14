@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import UpdatingImageView
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

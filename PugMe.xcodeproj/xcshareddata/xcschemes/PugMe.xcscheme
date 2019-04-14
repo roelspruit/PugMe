@@ -39,6 +39,16 @@
                ReferencedContainer = "container:PugMe.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "455CDD242260DABE00AEC54B"
+               BuildableName = "UpdatingImageViewTests.xctest"
+               BlueprintName = "UpdatingImageViewTests"
+               ReferencedContainer = "container:UpdatingImageView/UpdatingImageView.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

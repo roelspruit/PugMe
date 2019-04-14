@@ -12,7 +12,7 @@ import Cuckoo
 
 @testable import PugMe
 
-class ImageViewControllerTest: FBSnapshotTestCase {
+class ImageViewControllerTests: FBSnapshotTestCase {
     
     var mockPresenter: MockImageViewPresenting!
     var imageViewController: ImageViewController!
@@ -44,7 +44,7 @@ class ImageViewControllerTest: FBSnapshotTestCase {
     }
     
     func testImageState() {
-        let image = UIImage(named: "pug", in: Bundle.init(for: ImageDownloaderTests.self), compatibleWith: nil)!
+        let image = UIImage(named: "pug", in: Bundle.init(for: ImageViewControllerTests.self), compatibleWith: nil)!
         let imageViewController = ImageViewController(nibName: nil, bundle: nil)
         imageViewController.showImage(image)
         FBSnapshotVerifyView(imageViewController.view)

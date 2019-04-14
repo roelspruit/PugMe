@@ -6,15 +6,15 @@ use_frameworks!
 inhibit_all_warnings!
 
 target 'PugMe' do
-
+  
   target 'PugMeTests' do
-	inherit! :search_paths
-        pod 'Cuckoo'
-        pod 'iOSSnapshotTestCase'
-    end
-
-
+    inherit! :search_paths
+    pod 'Cuckoo'
+    pod 'iOSSnapshotTestCase'
+  end
+  
+  
   project 'PugMe.xcodeproj'
   workspace 'PugMe.xcworkspace'
-
+  
 end

@@ -13,8 +13,12 @@ import XCTest
 class ImageViewBuilderTests: XCTestCase {
 
     func testBuild() {
-        let builder = ImageViewBuilder(subreddit: "aww", clientId: "clientid")
-        let viewController = builder.build()
+        
+        let builder = ImageViewBuilder()
+        let mockImageDownloader = MockImageDownloading()
+        let mockImageUrlProvider = MockImageUrlProviding()
+        let viewController = builder.build(imageDownloader: mockImageDownloader,
+                                           imageUrlProvider: mockImageUrlProvider)
         
         XCTAssertTrue(viewController is ImageViewing)
         

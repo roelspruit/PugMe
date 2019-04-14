@@ -24,7 +24,9 @@ class ImageViewPresenterTests: XCTestCase {
         mockView = MockImageViewing()
         mockImageDownloader = MockImageDownloading()
         mockImageUrlProvider = MockImageUrlProviding()
-        presenter = ImageViewPresenter(view: mockView, imageDownloader: mockImageDownloader, imageUrlProvider: mockImageUrlProvider)
+        presenter = ImageViewPresenter(view: mockView,
+                                       imageDownloader: mockImageDownloader,
+                                       imageUrlProvider: mockImageUrlProvider)
         
         stub(mockView) { (stub) in
             when(stub.showRefreshState()).thenDoNothing()
@@ -38,7 +40,7 @@ class ImageViewPresenterTests: XCTestCase {
             })
         }
         
-        let testImage = UIImage(named: "pug", in: Bundle.init(for: ImageDownloaderTests.self), compatibleWith: nil)!
+        let testImage = UIImage(named: "pug", in: Bundle.init(for: ImageViewPresenterTests.self), compatibleWith: nil)!
         stub(mockImageDownloader) { (stub) in
             when(stub.getImage(fromUrl: any(), handler: any())).then({ (url, completion) in
                 completion(ImageDownloadResult.success(testImage))

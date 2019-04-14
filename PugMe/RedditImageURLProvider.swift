@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UpdatingImageView
 
 class RedditImageURLProvider: ImageUrlProviding {
 
