@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: PugMe/Networking/DataProtocols.swift at 2019-04-14 13:17:19 +0000
+// MARK: - Mocks generated from file: PugMe/Networking/DataProtocols.swift at 2019-04-16 15:02:20 +0000
 
 //
 //  DataProtocols.swift
@@ -128,7 +128,7 @@ class MockDataRequesting: DataRequesting, Cuckoo.ProtocolMock {
 }
 
 
-// MARK: - Mocks generated from file: PugMe/RedditClient/RedditClientProtocols.swift at 2019-04-14 13:17:19 +0000
+// MARK: - Mocks generated from file: PugMe/RedditClient/RedditClientProtocols.swift at 2019-04-16 15:02:20 +0000
 
 //
 //  Protocols.swift
@@ -229,7 +229,7 @@ class MockRedditClient: RedditClient, Cuckoo.ProtocolMock {
 }
 
 
-// MARK: - Mocks generated from file: PugMe/UpdatingImageView/Protocols/ImageDownloading.swift at 2019-04-14 13:17:19 +0000
+// MARK: - Mocks generated from file: PugMe/UpdatingImageView/Protocols/ImageDownloading.swift at 2019-04-16 15:02:20 +0000
 
 //
 //  ImageDownloading.swift
@@ -331,7 +331,7 @@ class MockImageDownloading: ImageDownloading, Cuckoo.ProtocolMock {
 }
 
 
-// MARK: - Mocks generated from file: PugMe/UpdatingImageView/Protocols/ImageUrlProviding.swift at 2019-04-14 13:17:19 +0000
+// MARK: - Mocks generated from file: PugMe/UpdatingImageView/Protocols/ImageUrlProviding.swift at 2019-04-16 15:02:20 +0000
 
 //
 //  ImageUrlProviding.swift
@@ -432,7 +432,7 @@ class MockImageUrlProviding: ImageUrlProviding, Cuckoo.ProtocolMock {
 }
 
 
-// MARK: - Mocks generated from file: PugMe/UpdatingImageView/Protocols/ImageViewBuilding.swift at 2019-04-14 13:17:19 +0000
+// MARK: - Mocks generated from file: PugMe/UpdatingImageView/Protocols/ImageViewBuilding.swift at 2019-04-16 15:02:20 +0000
 
 //
 //  ImageViewBuilding.swift
@@ -534,7 +534,7 @@ class MockImageViewBuilding: ImageViewBuilding, Cuckoo.ProtocolMock {
 }
 
 
-// MARK: - Mocks generated from file: PugMe/UpdatingImageView/Protocols/ImageViewPresenting.swift at 2019-04-14 13:17:19 +0000
+// MARK: - Mocks generated from file: PugMe/UpdatingImageView/Protocols/ImageViewPresenting.swift at 2019-04-16 15:02:20 +0000
 
 //
 //  ImageViewPresenting.swift
@@ -664,7 +664,7 @@ class MockImageViewPresenting: ImageViewPresenting, Cuckoo.ProtocolMock {
 }
 
 
-// MARK: - Mocks generated from file: PugMe/UpdatingImageView/Protocols/ImageViewing.swift at 2019-04-14 13:17:19 +0000
+// MARK: - Mocks generated from file: PugMe/UpdatingImageView/Protocols/ImageViewing.swift at 2019-04-16 15:02:20 +0000
 
 //
 //  ImageViewing.swift
