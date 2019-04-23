@@ -15,3 +15,11 @@ To build and run this application you need:
 - Xcode 10.1+
 - Cocoapods
 
+## Running the app
+- Open "Install cocoapods.command" from finder to install all required libraries.
+- Open PugMe.xcworkspace in Xcode
+- Run on any simulator or device
+
+## Executing tests
+All unit tests should be run on an iPhone SE Simulator. This matters because Snapshot tests are used that rely on a certain screensize and platform.
+

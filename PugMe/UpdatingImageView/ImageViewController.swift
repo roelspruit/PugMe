@@ -32,7 +32,7 @@ class ImageViewController: UIViewController {
         view.addSubview(activityIndicatorView)
         
         errorLabel.translatesAutoresizingMaskIntoConstraints = false
-        errorLabel.text = "Ooops! it seems like we pugged up.\nTap the screen to try again."
+        errorLabel.text = "Ooops! it seems like we pugged up. This specific image won't load.\nTap the screen to try again."
         errorLabel.font = UIFont.preferredFont(forTextStyle: .caption1)
         errorLabel.textColor = .white
         errorLabel.textAlignment = .center

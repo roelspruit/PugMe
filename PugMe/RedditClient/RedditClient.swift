@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// A rudimentary client for the Reddit API
 class Reddit: RedditClient {
     
     private let clientId: String
@@ -18,6 +19,12 @@ class Reddit: RedditClient {
         self.dataRequester = dataRequester
     }
     
+    
+    /// Get all new lists for this subreddit
+    ///
+    /// - Parameters:
+    ///   - subreddit: Name of the subreddit
+    ///   - completion: Completion callback
     func getNewListings(subreddit: String, completion: @escaping (RedditListingResponse?) -> Void) {
         
         let url = URL(string: "https://oauth.reddit.com/r/\(subreddit)/new?limit=100")!
