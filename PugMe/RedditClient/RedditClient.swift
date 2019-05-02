@@ -29,7 +29,7 @@ class Reddit: RedditClient {
         
         let url = URL(string: "https://oauth.reddit.com/r/\(subreddit)/new?limit=100")!
         
-        authorize { (tokenResponse) in
+        authorize { [weak self] (tokenResponse) in
             
             guard let token = tokenResponse?.access_token else {
                 completion(nil)
@@ -39,7 +39,7 @@ class Reddit: RedditClient {
             var request = URLRequest(url: url)
             request.addValue("bearer \(token)", forHTTPHeaderField: "Authorization")
             
-            self.dataRequester.getData(withRequest: request, handler: { (data, error) in
+            self?.dataRequester.getData(withRequest: request, handler: { (data, error) in
                 
                 guard let data = data else {
                     completion(nil)
@@ -87,11 +87,11 @@ class Reddit: RedditClient {
     
     private var deviceid: String {
         get {
-            if let id = UserDefaults.standard.string(forKey: "deviceId") {
+            if let id = UserDefaults.standard.string(forKey: "redditDeviceId") {
                 return id
             }
             let newId = UUID().uuidString
-            UserDefaults.standard.set(newId, forKey: "deviceId")
+            UserDefaults.standard.set(newId, forKey: "redditDeviceId")
             return newId
         }
     }
