@@ -8,6 +8,6 @@
 
 import Foundation
 
-public struct RedditListingData: Decodable {
-    public let url: URL
+struct RedditListingData: Decodable {
+    let url: URL
 }

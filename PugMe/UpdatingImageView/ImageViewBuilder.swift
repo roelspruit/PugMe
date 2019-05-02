@@ -11,8 +11,8 @@ import UIKit
 
 struct ImageViewBuilder: ImageViewBuilding {
     
-    public func build(imageDownloader: ImageDownloading,
-               imageUrlProvider: ImageUrlProviding) -> UIViewController {
+    func build(imageDownloader: ImageDownloading,
+                      imageUrlProvider: ImageUrlProviding) -> UIViewController {
         
         let view = ImageViewController()
         let presenter = ImageViewPresenter(view: view,

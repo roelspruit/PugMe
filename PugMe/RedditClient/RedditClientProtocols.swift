@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol RedditClient {
+protocol RedditClient {
     func getNewListings(subreddit: String, completion: @escaping (RedditListingResponse?) -> Void )
 }

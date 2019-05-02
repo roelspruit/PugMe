@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct RedditAccessTokenResponse: Codable {
+struct RedditAccessTokenResponse: Codable {
     var access_token: String
     var expires_in: Int
 }
