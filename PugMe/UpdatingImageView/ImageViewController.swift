@@ -10,7 +10,7 @@ import UIKit
 
 class ImageViewController: UIViewController {
     
-    weak var presenter: ImageViewPresenting?
+    var presenter: ImageViewPresenting?
     
     private let errorLabel = UILabel()
     private let imageView = UIImageView()

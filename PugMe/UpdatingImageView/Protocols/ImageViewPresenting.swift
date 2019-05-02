@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ImageViewPresenting: AnyObject {
+protocol ImageViewPresenting {
     func viewDidLoad()
     func tappedView()
 }

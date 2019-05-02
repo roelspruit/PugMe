@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol ImageViewing {
+protocol ImageViewing: AnyObject {
     func showImage(_ image: UIImage)
     func showRefreshState()
     func showError()

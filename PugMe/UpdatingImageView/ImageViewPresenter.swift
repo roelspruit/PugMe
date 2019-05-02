@@ -11,7 +11,7 @@ import UIKit
 
 class ImageViewPresenter {
     
-    private let view: ImageViewing
+    private weak var view: ImageViewing?
     private let imageDownloader: ImageDownloading
     private let imageUrlProvider: ImageUrlProviding
     
@@ -45,11 +45,11 @@ class ImageViewPresenter {
                 
                 case .success(let image):
                     self?.removeSeenImage(url: url)
-                    self?.view.showImage(image)
+                    self?.view?.showImage(image)
                 
                 case .failure:
                     self?.removeSeenImage(url: url)
-                    self?.view.showError()
+                    self?.view?.showError()
             }
         }
     }
@@ -59,7 +59,7 @@ class ImageViewPresenter {
         imageUrlProvider.getImageUrls { [weak self] (urls) in
             
             guard let urls = urls else {
-                self?.view.showError()
+                self?.view?.showError()
                 return
             }
             
@@ -76,12 +76,12 @@ class ImageViewPresenter {
 extension ImageViewPresenter: ImageViewPresenting {
 
     func viewDidLoad() {
-        view.showRefreshState()
+        view?.showRefreshState()
         getNextImage()
     }
     
     func tappedView() {
-        view.showRefreshState()
+        view?.showRefreshState()
         getNextImage()
     }
 }

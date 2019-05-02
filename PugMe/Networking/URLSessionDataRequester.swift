@@ -11,12 +11,7 @@ import Foundation
 class URLSessionDataRequester: DataRequesting {
     
     func getData(fromUrl url: URL, handler: @escaping (Data?, Error?) -> Void) {
-        let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
-            DispatchQueue.main.async {
-                handler(data, error)
-            }
-        }
-        task.resume()
+        getData(withRequest: URLRequest(url: url), handler: handler)
     }
     
     func getData(withRequest request: URLRequest, handler: @escaping (Data?, Error?) -> Void) {
