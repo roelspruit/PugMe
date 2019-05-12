@@ -9,15 +9,15 @@
 import Foundation
 import UIKit
 
-protocol ImageDownloading {
+public protocol ImageDownloading {
     func getImage(fromUrl url: URL, handler: @escaping (ImageDownloadResult) -> Void)
 }
 
-enum ImageDownloadResult {
+public enum ImageDownloadResult {
     case success(UIImage)
     case failure(Error)
 }
 
-enum ImageDownloadError: Error {
+public enum ImageDownloadError: Error {
     case generic
 }

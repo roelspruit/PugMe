@@ -9,7 +9,7 @@
 import XCTest
 import Cuckoo
 
-@testable import PugMe
+@testable import UpdatingImageView
 
 class ImageViewPresenterTests: XCTestCase {
     
@@ -17,6 +17,8 @@ class ImageViewPresenterTests: XCTestCase {
     var mockImageDownloader = MockImageDownloading()
     var mockImageUrlProvider = MockImageUrlProviding()
     var presenter: ImageViewPresenter!
+    
+    func a() { print ("something") }
     
     override func setUp() {
         super.setUp()

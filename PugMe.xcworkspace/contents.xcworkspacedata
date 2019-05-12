@@ -5,6 +5,12 @@
       location = "container:PugMe.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Modules/UpdatingImageView/UpdatingImageView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:PugMe.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

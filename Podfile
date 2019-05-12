@@ -18,3 +18,16 @@ target 'PugMe' do
   workspace 'PugMe.xcworkspace'
   
 end
+
+target 'UpdatingImageView' do
+  
+  target 'UpdatingImageViewTests' do
+    inherit! :search_paths
+    pod 'Cuckoo'
+    pod 'iOSSnapshotTestCase'
+  end
+  
+  
+  project './Modules/UpdatingImageView/UpdatingImageView.xcodeproj'
+  
+end

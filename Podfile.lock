@@ -1,9 +1,9 @@
 PODS:
-  - Cuckoo (0.12.0)
-  - iOSSnapshotTestCase (4.0.0):
-    - iOSSnapshotTestCase/SwiftSupport (= 4.0.0)
-  - iOSSnapshotTestCase/Core (4.0.0)
-  - iOSSnapshotTestCase/SwiftSupport (4.0.0):
+  - Cuckoo (0.12.1)
+  - iOSSnapshotTestCase (6.0.3):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.0.3)
+  - iOSSnapshotTestCase/Core (6.0.3)
+  - iOSSnapshotTestCase/SwiftSupport (6.0.3):
     - iOSSnapshotTestCase/Core
 
 DEPENDENCIES:
@@ -16,9 +16,9 @@ SPEC REPOS:
     - iOSSnapshotTestCase
 
 SPEC CHECKSUMS:
-  Cuckoo: d30b6c149e52ffbcfe6b4a9543e4627d08947274
-  iOSSnapshotTestCase: 711379b19f69a22c131527df862352c877c2773c
+  Cuckoo: 2f10364798baa4b0d4aacabfa475249cf29977bc
+  iOSSnapshotTestCase: 944a73f6d9676302811a86c0cf35f0e6ef5ab2a0
 
-PODFILE CHECKSUM: cc272e2a7f5ac873ce92ab26871459599cd0dd71
+PODFILE CHECKSUM: 33f956846b5c30979f72e432587a436caa17bb71
 
 COCOAPODS: 1.6.1

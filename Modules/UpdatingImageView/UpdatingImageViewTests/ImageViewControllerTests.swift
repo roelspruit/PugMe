@@ -10,7 +10,7 @@ import Foundation
 import FBSnapshotTestCase
 import Cuckoo
 
-@testable import PugMe
+@testable import UpdatingImageView
 
 class ImageViewControllerTests: FBSnapshotTestCase {
     

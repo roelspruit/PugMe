@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01EF4AA4E6AF8C08EBD31D31 /* Pods_PugMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F98E906199FF65783F5F5B75 /* Pods_PugMeTests.framework */; };
 		4507E9BC217B2628007434D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9BB217B2628007434D4 /* AppDelegate.swift */; };
 		4507E9C1217B2628007434D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507E9BF217B2628007434D4 /* Main.storyboard */; };
 		4507E9C3217B262A007434D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4507E9C2217B262A007434D4 /* Assets.xcassets */; };
@@ -16,20 +15,11 @@
 		4507E9DC217B3428007434D4 /* DataProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9DB217B3428007434D4 /* DataProtocols.swift */; };
 		4507EA34217D9DDE007434D4 /* ImageDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EA33217D9DDE007434D4 /* ImageDownloaderTests.swift */; };
 		4507EA3E217D9F56007434D4 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507EA3D217D9F56007434D4 /* GeneratedMocks.swift */; };
-		450A2DB82263694B0077709E /* ImageViewing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A2DA5226367ED0077709E /* ImageViewing.swift */; };
-		450A2DB92263694B0077709E /* ImageViewPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A2DA6226367ED0077709E /* ImageViewPresenting.swift */; };
-		450A2DBA2263694B0077709E /* ImageUrlProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A2DA7226367ED0077709E /* ImageUrlProviding.swift */; };
-		450A2DBB2263694B0077709E /* ImageDownloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A2DA8226367ED0077709E /* ImageDownloading.swift */; };
-		450A2DBC2263694B0077709E /* ImageViewBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A2DA9226367ED0077709E /* ImageViewBuilding.swift */; };
-		450A2DBD226369570077709E /* ImageViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A2DAB226367ED0077709E /* ImageViewBuilder.swift */; };
-		450A2DBE226369570077709E /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A2DAC226367ED0077709E /* ImageViewController.swift */; };
-		450A2DBF226369570077709E /* ImageViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A2DAD226367ED0077709E /* ImageViewPresenter.swift */; };
-		450A2DC322636A450077709E /* ImageViewBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A2DC022636A440077709E /* ImageViewBuilderTests.swift */; };
-		450A2DC422636A450077709E /* ImageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A2DC122636A450077709E /* ImageViewControllerTests.swift */; };
-		450A2DC522636A450077709E /* ImageViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A2DC222636A450077709E /* ImageViewPresenterTests.swift */; };
-		4536B88A22634B5A000E1112 /* pug.png in Resources */ = {isa = PBXBuildFile; fileRef = 4536B88922634B5A000E1112 /* pug.png */; };
+		452E58D122889B1D00BFE39F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452E58D022889B1D00BFE39F /* Foundation.framework */; };
+		452E58D522889BD000BFE39F /* pug.png in Resources */ = {isa = PBXBuildFile; fileRef = 452E58D422889BB300BFE39F /* pug.png */; };
 		455CDD452260DBB500AEC54B /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455CDD442260DBB500AEC54B /* ImageDownloader.swift */; };
 		455CDD472260DC2800AEC54B /* RedditImageURLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455CDD462260DC2800AEC54B /* RedditImageURLProvider.swift */; };
+		458662FC22886E12001A2D8D /* UpdatingImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 458662FB22886E12001A2D8D /* UpdatingImageView.framework */; };
 		45E39D20217EF9400071050B /* RedditListingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D18217EF9400071050B /* RedditListingResponse.swift */; };
 		45E39D21217EF9400071050B /* RedditAccessTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D19217EF9400071050B /* RedditAccessTokenResponse.swift */; };
 		45E39D22217EF9400071050B /* RedditListingResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D1A217EF9400071050B /* RedditListingResponseData.swift */; };
@@ -37,7 +27,8 @@
 		45E39D24217EF9400071050B /* RedditListingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D1C217EF9400071050B /* RedditListingData.swift */; };
 		45E39D25217EF9400071050B /* RedditClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D1D217EF9400071050B /* RedditClient.swift */; };
 		45E39D26217EF9400071050B /* RedditClientProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D1E217EF9400071050B /* RedditClientProtocols.swift */; };
-		961FB3FEF0AC47A3E18B8132 /* Pods_PugMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A694F202B27342F7DBBBDCD4 /* Pods_PugMe.framework */; };
+		8456F50E48C2DE6369032E5A /* Pods_PugMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A37E24B625D9A047D7EFBD2 /* Pods_PugMeTests.framework */; };
+		963976157CCAC7D916986FF9 /* Pods_PugMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA62037221615FEEEB1960F /* Pods_PugMe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CDE1654C0E66B2018F0FC42 /* Pods-PugMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PugMe/Pods-PugMe.debug.xcconfig"; sourceTree = "<group>"; };
 		4507E9B8217B2627007434D4 /* PugMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PugMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4507E9BB217B2628007434D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4507E9C0217B2628007434D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,22 +55,13 @@
 		4507EA33217D9DDE007434D4 /* ImageDownloaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderTests.swift; sourceTree = "<group>"; };
 		4507EA35217D9DDE007434D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4507EA3D217D9F56007434D4 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
-		450A2DA5226367ED0077709E /* ImageViewing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewing.swift; sourceTree = "<group>"; };
-		450A2DA6226367ED0077709E /* ImageViewPresenting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewPresenting.swift; sourceTree = "<group>"; };
-		450A2DA7226367ED0077709E /* ImageUrlProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUrlProviding.swift; sourceTree = "<group>"; };
-		450A2DA8226367ED0077709E /* ImageDownloading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloading.swift; sourceTree = "<group>"; };
-		450A2DA9226367ED0077709E /* ImageViewBuilding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewBuilding.swift; sourceTree = "<group>"; };
-		450A2DAB226367ED0077709E /* ImageViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewBuilder.swift; sourceTree = "<group>"; };
-		450A2DAC226367ED0077709E /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
-		450A2DAD226367ED0077709E /* ImageViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewPresenter.swift; sourceTree = "<group>"; };
-		450A2DC022636A440077709E /* ImageViewBuilderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewBuilderTests.swift; sourceTree = "<group>"; };
-		450A2DC122636A450077709E /* ImageViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewControllerTests.swift; sourceTree = "<group>"; };
-		450A2DC222636A450077709E /* ImageViewPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewPresenterTests.swift; sourceTree = "<group>"; };
-		4536B88922634B5A000E1112 /* pug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pug.png; sourceTree = "<group>"; };
+		452E58D022889B1D00BFE39F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		452E58D422889BB300BFE39F /* pug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pug.png; sourceTree = "<group>"; };
 		455CDD3F2260DB3100AEC54B /* UpdatingImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UpdatingImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		455CDD442260DBB500AEC54B /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		455CDD462260DC2800AEC54B /* RedditImageURLProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditImageURLProvider.swift; sourceTree = "<group>"; };
 		455CDD4C2260DCD700AEC54B /* UpdatingImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UpdatingImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		458662FB22886E12001A2D8D /* UpdatingImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UpdatingImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E39D18217EF9400071050B /* RedditListingResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditListingResponse.swift; sourceTree = "<group>"; };
 		45E39D19217EF9400071050B /* RedditAccessTokenResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditAccessTokenResponse.swift; sourceTree = "<group>"; };
 		45E39D1A217EF9400071050B /* RedditListingResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditListingResponseData.swift; sourceTree = "<group>"; };
@@ -88,11 +69,12 @@
 		45E39D1C217EF9400071050B /* RedditListingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditListingData.swift; sourceTree = "<group>"; };
 		45E39D1D217EF9400071050B /* RedditClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditClient.swift; sourceTree = "<group>"; };
 		45E39D1E217EF9400071050B /* RedditClientProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditClientProtocols.swift; sourceTree = "<group>"; };
-		8A657D58FBC8C4154ABF55F7 /* Pods-PugMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PugMeTests/Pods-PugMeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A694F202B27342F7DBBBDCD4 /* Pods_PugMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PugMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA56413F4B2777F4FDA8ACF6 /* Pods-PugMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-PugMe/Pods-PugMe.release.xcconfig"; sourceTree = "<group>"; };
-		CEB72F12E268E2BB1DF3C45B /* Pods-PugMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PugMeTests/Pods-PugMeTests.release.xcconfig"; sourceTree = "<group>"; };
-		F98E906199FF65783F5F5B75 /* Pods_PugMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PugMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A37E24B625D9A047D7EFBD2 /* Pods_PugMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PugMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E7CE8F583C8D7A3DE785D4 /* Pods-PugMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMe.release.xcconfig"; path = "Target Support Files/Pods-PugMe/Pods-PugMe.release.xcconfig"; sourceTree = "<group>"; };
+		9BA62037221615FEEEB1960F /* Pods_PugMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PugMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4086BA65056C24A46AED26A /* Pods-PugMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMeTests.release.xcconfig"; path = "Target Support Files/Pods-PugMeTests/Pods-PugMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3134514F767C8E4416581F0 /* Pods-PugMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMeTests.debug.xcconfig"; path = "Target Support Files/Pods-PugMeTests/Pods-PugMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3C27BA6CDF2AB730538031E /* Pods-PugMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMe.debug.xcconfig"; path = "Target Support Files/Pods-PugMe/Pods-PugMe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				961FB3FEF0AC47A3E18B8132 /* Pods_PugMe.framework in Frameworks */,
+				452E58D122889B1D00BFE39F /* Foundation.framework in Frameworks */,
+				458662FC22886E12001A2D8D /* UpdatingImageView.framework in Frameworks */,
+				963976157CCAC7D916986FF9 /* Pods_PugMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01EF4AA4E6AF8C08EBD31D31 /* Pods_PugMeTests.framework in Frameworks */,
+				8456F50E48C2DE6369032E5A /* Pods_PugMeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,11 +102,13 @@
 		42A4F244FCAFDF2B3973D5D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				452E58D022889B1D00BFE39F /* Foundation.framework */,
+				458662FB22886E12001A2D8D /* UpdatingImageView.framework */,
 				455CDD4C2260DCD700AEC54B /* UpdatingImageView.framework */,
 				455CDD3F2260DB3100AEC54B /* UpdatingImageView.framework */,
 				4507EA26217B7C82007434D4 /* RedditClient.framework */,
-				A694F202B27342F7DBBBDCD4 /* Pods_PugMe.framework */,
-				F98E906199FF65783F5F5B75 /* Pods_PugMeTests.framework */,
+				9BA62037221615FEEEB1960F /* Pods_PugMe.framework */,
+				5A37E24B625D9A047D7EFBD2 /* Pods_PugMeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,7 +120,7 @@
 				4507EA32217D9DDE007434D4 /* PugMeTests */,
 				4507E9B9217B2627007434D4 /* Products */,
 				42A4F244FCAFDF2B3973D5D0 /* Frameworks */,
-				F383F7BBE50C490657BBCB43 /* Pods */,
+				FE76F247116CB26A24EA0088 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,7 +136,6 @@
 		4507E9BA217B2627007434D4 /* PugMe */ = {
 			isa = PBXGroup;
 			children = (
-				450A2DB0226367ED0077709E /* UpdatingImageView */,
 				45E39D16217EF9400071050B /* RedditClient */,
 				4507E9DA217B33C3007434D4 /* Networking */,
 				4507E9BB217B2628007434D4 /* AppDelegate.swift */,
@@ -176,46 +161,12 @@
 		4507EA32217D9DDE007434D4 /* PugMeTests */ = {
 			isa = PBXGroup;
 			children = (
-				450A2DB12263681D0077709E /* UpdatingImageViewTests */,
+				452E58D422889BB300BFE39F /* pug.png */,
 				4507EA35217D9DDE007434D4 /* Info.plist */,
-				4536B88922634B5A000E1112 /* pug.png */,
 				4507EA3D217D9F56007434D4 /* GeneratedMocks.swift */,
 				4507EA33217D9DDE007434D4 /* ImageDownloaderTests.swift */,
 			);
 			path = PugMeTests;
-			sourceTree = "<group>";
-		};
-		450A2DAA226367ED0077709E /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				450A2DA5226367ED0077709E /* ImageViewing.swift */,
-				450A2DA6226367ED0077709E /* ImageViewPresenting.swift */,
-				450A2DA7226367ED0077709E /* ImageUrlProviding.swift */,
-				450A2DA8226367ED0077709E /* ImageDownloading.swift */,
-				450A2DA9226367ED0077709E /* ImageViewBuilding.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		450A2DB0226367ED0077709E /* UpdatingImageView */ = {
-			isa = PBXGroup;
-			children = (
-				450A2DAA226367ED0077709E /* Protocols */,
-				450A2DAB226367ED0077709E /* ImageViewBuilder.swift */,
-				450A2DAC226367ED0077709E /* ImageViewController.swift */,
-				450A2DAD226367ED0077709E /* ImageViewPresenter.swift */,
-			);
-			path = UpdatingImageView;
-			sourceTree = "<group>";
-		};
-		450A2DB12263681D0077709E /* UpdatingImageViewTests */ = {
-			isa = PBXGroup;
-			children = (
-				450A2DC022636A440077709E /* ImageViewBuilderTests.swift */,
-				450A2DC122636A450077709E /* ImageViewControllerTests.swift */,
-				450A2DC222636A450077709E /* ImageViewPresenterTests.swift */,
-			);
-			path = UpdatingImageViewTests;
 			sourceTree = "<group>";
 		};
 		45E39D16217EF9400071050B /* RedditClient */ = {
@@ -240,15 +191,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		F383F7BBE50C490657BBCB43 /* Pods */ = {
+		FE76F247116CB26A24EA0088 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0CDE1654C0E66B2018F0FC42 /* Pods-PugMe.debug.xcconfig */,
-				BA56413F4B2777F4FDA8ACF6 /* Pods-PugMe.release.xcconfig */,
-				8A657D58FBC8C4154ABF55F7 /* Pods-PugMeTests.debug.xcconfig */,
-				CEB72F12E268E2BB1DF3C45B /* Pods-PugMeTests.release.xcconfig */,
+				F3C27BA6CDF2AB730538031E /* Pods-PugMe.debug.xcconfig */,
+				61E7CE8F583C8D7A3DE785D4 /* Pods-PugMe.release.xcconfig */,
+				C3134514F767C8E4416581F0 /* Pods-PugMeTests.debug.xcconfig */,
+				A4086BA65056C24A46AED26A /* Pods-PugMeTests.release.xcconfig */,
 			);
-			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4507E9CA217B262A007434D4 /* Build configuration list for PBXNativeTarget "PugMe" */;
 			buildPhases = (
-				7BF14CFC4E85FA64FEB45048 /* [CP] Check Pods Manifest.lock */,
+				43D8780E26320FA94F5691CB /* [CP] Check Pods Manifest.lock */,
 				4507E9B4217B2627007434D4 /* Sources */,
 				4507E9B5217B2627007434D4 /* Frameworks */,
 				4507E9B6217B2627007434D4 /* Resources */,
@@ -276,12 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4507EA38217D9DDE007434D4 /* Build configuration list for PBXNativeTarget "PugMeTests" */;
 			buildPhases = (
-				A4F5F6510CA340526A1D3A9F /* [CP] Check Pods Manifest.lock */,
+				D59411D6969B2F605327EA84 /* [CP] Check Pods Manifest.lock */,
 				4507EA3C217D9ECB007434D4 /* Generate Mocks */,
 				4507EA2D217D9DDE007434D4 /* Sources */,
 				4507EA2E217D9DDE007434D4 /* Frameworks */,
 				4507EA2F217D9DDE007434D4 /* Resources */,
-				D89226C71D4B7C06151EC4F7 /* [CP] Embed Pods Frameworks */,
+				A912E15FCF65177E6FCD519E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -346,40 +297,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4536B88A22634B5A000E1112 /* pug.png in Resources */,
+				452E58D522889BD000BFE39F /* pug.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4507EA3C217D9ECB007434D4 /* Generate Mocks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				$SRCROOT/PugMe/Networking/DataProtocols.swift,
-				$SRCROOT/PugMe/RedditClient/RedditClientProtocols.swift,
-				$SRCROOT/PugMe/UpdatingImageView/Protocols/ImageViewing.swift,
-				$SRCROOT/PugMe/UpdatingImageView/Protocols/ImageViewPresenting.swift,
-				$SRCROOT/PugMe/UpdatingImageView/Protocols/ImageUrlProviding.swift,
-				$SRCROOT/PugMe/UpdatingImageView/Protocols/ImageDownloading.swift,
-				$SRCROOT/PugMe/UpdatingImageView/Protocols/ImageViewBuilding.swift,
-			);
-			name = "Generate Mocks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(SRCROOT)/PugMeTests/GeneratedMocks.swift",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PROJECT_DIR}/Scripts/Generate-Cuckoo-Mocks.sh\"\n";
-		};
-		7BF14CFC4E85FA64FEB45048 /* [CP] Check Pods Manifest.lock */ = {
+		43D8780E26320FA94F5691CB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,7 +326,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A4F5F6510CA340526A1D3A9F /* [CP] Check Pods Manifest.lock */ = {
+		4507EA3C217D9ECB007434D4 /* Generate Mocks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -409,21 +334,20 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				$SRCROOT/PugMe/Networking/DataProtocols.swift,
+				$SRCROOT/PugMe/RedditClient/RedditClientProtocols.swift,
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "Generate Mocks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PugMeTests-checkManifestLockResult.txt",
+				"$(SRCROOT)/PugMeTests/GeneratedMocks.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "\"${PROJECT_DIR}/Scripts/Generate-Cuckoo-Mocks.sh\"\n";
 		};
-		D89226C71D4B7C06151EC4F7 /* [CP] Embed Pods Frameworks */ = {
+		A912E15FCF65177E6FCD519E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -447,6 +371,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PugMeTests/Pods-PugMeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D59411D6969B2F605327EA84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PugMeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -455,25 +401,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				45E39D24217EF9400071050B /* RedditListingData.swift in Sources */,
-				450A2DB82263694B0077709E /* ImageViewing.swift in Sources */,
 				45E39D25217EF9400071050B /* RedditClient.swift in Sources */,
 				45E39D22217EF9400071050B /* RedditListingResponseData.swift in Sources */,
-				450A2DBD226369570077709E /* ImageViewBuilder.swift in Sources */,
 				45E39D20217EF9400071050B /* RedditListingResponse.swift in Sources */,
 				4507E9D4217B2EB3007434D4 /* URLSessionDataRequester.swift in Sources */,
 				45E39D23217EF9400071050B /* RedditListing.swift in Sources */,
 				4507E9BC217B2628007434D4 /* AppDelegate.swift in Sources */,
 				455CDD472260DC2800AEC54B /* RedditImageURLProvider.swift in Sources */,
-				450A2DB92263694B0077709E /* ImageViewPresenting.swift in Sources */,
-				450A2DBC2263694B0077709E /* ImageViewBuilding.swift in Sources */,
-				450A2DBB2263694B0077709E /* ImageDownloading.swift in Sources */,
-				450A2DBF226369570077709E /* ImageViewPresenter.swift in Sources */,
 				45E39D21217EF9400071050B /* RedditAccessTokenResponse.swift in Sources */,
 				4507E9DC217B3428007434D4 /* DataProtocols.swift in Sources */,
 				455CDD452260DBB500AEC54B /* ImageDownloader.swift in Sources */,
-				450A2DBE226369570077709E /* ImageViewController.swift in Sources */,
 				45E39D26217EF9400071050B /* RedditClientProtocols.swift in Sources */,
-				450A2DBA2263694B0077709E /* ImageUrlProviding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,9 +420,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4507EA34217D9DDE007434D4 /* ImageDownloaderTests.swift in Sources */,
-				450A2DC322636A450077709E /* ImageViewBuilderTests.swift in Sources */,
-				450A2DC522636A450077709E /* ImageViewPresenterTests.swift in Sources */,
-				450A2DC422636A450077709E /* ImageViewControllerTests.swift in Sources */,
 				4507EA3E217D9F56007434D4 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,6 +457,7 @@
 		4507E9C8217B262A007434D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -583,6 +519,7 @@
 		4507E9C9217B262A007434D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -637,7 +574,7 @@
 		};
 		4507E9CB217B262A007434D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CDE1654C0E66B2018F0FC42 /* Pods-PugMe.debug.xcconfig */;
+			baseConfigurationReference = F3C27BA6CDF2AB730538031E /* Pods-PugMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -656,7 +593,7 @@
 		};
 		4507E9CC217B262A007434D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA56413F4B2777F4FDA8ACF6 /* Pods-PugMe.release.xcconfig */;
+			baseConfigurationReference = 61E7CE8F583C8D7A3DE785D4 /* Pods-PugMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -675,7 +612,7 @@
 		};
 		4507EA39217D9DDE007434D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A657D58FBC8C4154ABF55F7 /* Pods-PugMeTests.debug.xcconfig */;
+			baseConfigurationReference = C3134514F767C8E4416581F0 /* Pods-PugMeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -696,7 +633,7 @@
 		};
 		4507EA3A217D9DDE007434D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEB72F12E268E2BB1DF3C45B /* Pods-PugMeTests.release.xcconfig */;
+			baseConfigurationReference = A4086BA65056C24A46AED26A /* Pods-PugMeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

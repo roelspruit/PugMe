@@ -8,16 +8,15 @@
 
 import XCTest
 
-@testable import PugMe
+@testable import UpdatingImageView
 
-class ImageViewBuilderTests: XCTestCase {
+class UpdatingImageViewBuilderTests: XCTestCase {
 
     func testBuild() {
         
-        let builder = ImageViewBuilder()
         let mockImageDownloader = MockImageDownloading()
         let mockImageUrlProvider = MockImageUrlProviding()
-        let viewController = builder.build(imageDownloader: mockImageDownloader,
+        let viewController = UpdatingImageViewBuilder.build(imageDownloader: mockImageDownloader,
                                            imageUrlProvider: mockImageUrlProvider)
         
         XCTAssertTrue(viewController is ImageViewing)
