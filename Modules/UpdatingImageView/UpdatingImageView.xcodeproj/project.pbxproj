@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0079A0A2665EC1943A2AA42A /* Pods_UpdatingImageViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB8922B119AABD6A2B6C45E /* Pods_UpdatingImageViewTests.framework */; };
 		452E58D222889B3300BFE39F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4586632022888169001A2D8D /* Foundation.framework */; };
 		452E58D622889BE200BFE39F /* pug.png in Resources */ = {isa = PBXBuildFile; fileRef = 452E58D322889B8A00BFE39F /* pug.png */; };
 		458662E922886D90001A2D8D /* UpdatingImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 458662E722886D90001A2D8D /* UpdatingImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 		4586631B22887176001A2D8D /* ImageViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586631522887066001A2D8D /* ImageViewPresenterTests.swift */; };
 		4586631E228873E2001A2D8D /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586631D228873E2001A2D8D /* GeneratedMocks.swift */; };
 		4586632122888169001A2D8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4586632022888169001A2D8D /* Foundation.framework */; };
+		5F5CA15DC25C3187D7CB6061 /* Pods_UpdatingImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070896EA9E6CD5905C7EE9C3 /* Pods_UpdatingImageView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17833136E9D3B9FC73580B05 /* Pods-UpdatingImageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpdatingImageView.release.xcconfig"; path = "Target Support Files/Pods-UpdatingImageView/Pods-UpdatingImageView.release.xcconfig"; sourceTree = "<group>"; };
+		070896EA9E6CD5905C7EE9C3 /* Pods_UpdatingImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpdatingImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3753A117A73FFF40122DB0E6 /* Pods-UpdatingImageViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpdatingImageViewTests.release.xcconfig"; path = "Target Support Files/Pods-UpdatingImageViewTests/Pods-UpdatingImageViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		452E58D322889B8A00BFE39F /* pug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pug.png; path = ../../../PugMeTests/pug.png; sourceTree = "<group>"; };
 		458662E422886D90001A2D8D /* UpdatingImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UpdatingImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		458662E722886D90001A2D8D /* UpdatingImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdatingImageView.h; sourceTree = "<group>"; };
@@ -55,9 +58,10 @@
 		4586631522887066001A2D8D /* ImageViewPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewPresenterTests.swift; sourceTree = "<group>"; };
 		4586631D228873E2001A2D8D /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		4586632022888169001A2D8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		5B5E003B398246C677B434D3 /* Pods-UpdatingImageViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpdatingImageViewTests.debug.xcconfig"; path = "Target Support Files/Pods-UpdatingImageViewTests/Pods-UpdatingImageViewTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5D093D0E8E56D6A117AACFE3 /* Pods-UpdatingImageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpdatingImageView.debug.xcconfig"; path = "Target Support Files/Pods-UpdatingImageView/Pods-UpdatingImageView.debug.xcconfig"; sourceTree = "<group>"; };
-		65D3DDAF1031B351F2056647 /* Pods-UpdatingImageViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpdatingImageViewTests.release.xcconfig"; path = "Target Support Files/Pods-UpdatingImageViewTests/Pods-UpdatingImageViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		48CC19C58B47708036506A35 /* Pods-UpdatingImageViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpdatingImageViewTests.debug.xcconfig"; path = "Target Support Files/Pods-UpdatingImageViewTests/Pods-UpdatingImageViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A0B48FA0F7C3B3B4502AC5F /* Pods-UpdatingImageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpdatingImageView.debug.xcconfig"; path = "Target Support Files/Pods-UpdatingImageView/Pods-UpdatingImageView.debug.xcconfig"; sourceTree = "<group>"; };
+		BFEF4BF10368972EC91FFA31 /* Pods-UpdatingImageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpdatingImageView.release.xcconfig"; path = "Target Support Files/Pods-UpdatingImageView/Pods-UpdatingImageView.release.xcconfig"; sourceTree = "<group>"; };
+		FEB8922B119AABD6A2B6C45E /* Pods_UpdatingImageViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpdatingImageViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4586632122888169001A2D8D /* Foundation.framework in Frameworks */,
+				5F5CA15DC25C3187D7CB6061 /* Pods_UpdatingImageView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,12 +80,25 @@
 			files = (
 				452E58D222889B3300BFE39F /* Foundation.framework in Frameworks */,
 				4586630D22887051001A2D8D /* UpdatingImageView.framework in Frameworks */,
+				0079A0A2665EC1943A2AA42A /* Pods_UpdatingImageViewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E3007F8EEB4C48DCC24E152 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A0B48FA0F7C3B3B4502AC5F /* Pods-UpdatingImageView.debug.xcconfig */,
+				BFEF4BF10368972EC91FFA31 /* Pods-UpdatingImageView.release.xcconfig */,
+				48CC19C58B47708036506A35 /* Pods-UpdatingImageViewTests.debug.xcconfig */,
+				3753A117A73FFF40122DB0E6 /* Pods-UpdatingImageViewTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
 		458662DA22886D90001A2D8D = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +106,7 @@
 				4586630922887051001A2D8D /* UpdatingImageViewTests */,
 				458662E522886D90001A2D8D /* Products */,
 				71A9748D4ADFF23ACB971E3E /* Frameworks */,
-				AB3F5BEF50CAFC8B109EC7D3 /* Pods */,
+				0E3007F8EEB4C48DCC24E152 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,20 +176,10 @@
 			isa = PBXGroup;
 			children = (
 				4586632022888169001A2D8D /* Foundation.framework */,
+				070896EA9E6CD5905C7EE9C3 /* Pods_UpdatingImageView.framework */,
+				FEB8922B119AABD6A2B6C45E /* Pods_UpdatingImageViewTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AB3F5BEF50CAFC8B109EC7D3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5D093D0E8E56D6A117AACFE3 /* Pods-UpdatingImageView.debug.xcconfig */,
-				17833136E9D3B9FC73580B05 /* Pods-UpdatingImageView.release.xcconfig */,
-				5B5E003B398246C677B434D3 /* Pods-UpdatingImageViewTests.debug.xcconfig */,
-				65D3DDAF1031B351F2056647 /* Pods-UpdatingImageViewTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../../Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,10 +299,10 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				$SRCROOT/UpdatingImageView/Protocol/ImageUrlProviding.swift,
-				$SRCROOT/UpdatingImageView/Protocol/ImageViewPresenting.swift,
-				$SRCROOT/UpdatingImageView/Protocol/ImageViewing.swift,
-				$SRCROOT/UpdatingImageView/Protocol/ImageDownloading.swift,
+				"$SRCROOT/UpdatingImageView/Protocol/ImageUrlProviding.swift",
+				"$SRCROOT/UpdatingImageView/Protocol/ImageViewPresenting.swift",
+				"$SRCROOT/UpdatingImageView/Protocol/ImageViewing.swift",
+				"$SRCROOT/UpdatingImageView/Protocol/ImageDownloading.swift",
 			);
 			name = "Generate Cuckoo Mocks";
 			outputFileListPaths = (
@@ -539,7 +547,7 @@
 		};
 		458662ED22886D90001A2D8D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D093D0E8E56D6A117AACFE3 /* Pods-UpdatingImageView.debug.xcconfig */;
+			baseConfigurationReference = 7A0B48FA0F7C3B3B4502AC5F /* Pods-UpdatingImageView.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -568,7 +576,7 @@
 		};
 		458662EE22886D90001A2D8D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17833136E9D3B9FC73580B05 /* Pods-UpdatingImageView.release.xcconfig */;
+			baseConfigurationReference = BFEF4BF10368972EC91FFA31 /* Pods-UpdatingImageView.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -596,7 +604,7 @@
 		};
 		4586631122887051001A2D8D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B5E003B398246C677B434D3 /* Pods-UpdatingImageViewTests.debug.xcconfig */;
+			baseConfigurationReference = 48CC19C58B47708036506A35 /* Pods-UpdatingImageViewTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74S47PCZWX;
@@ -615,7 +623,7 @@
 		};
 		4586631222887051001A2D8D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65D3DDAF1031B351F2056647 /* Pods-UpdatingImageViewTests.release.xcconfig */;
+			baseConfigurationReference = 3753A117A73FFF40122DB0E6 /* Pods-UpdatingImageViewTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74S47PCZWX;

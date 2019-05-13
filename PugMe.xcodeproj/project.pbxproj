@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2449706EBEAD84935B6B03B8 /* Pods_PugMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11966CD1C18820388772BC6C /* Pods_PugMeTests.framework */; };
 		4507E9BC217B2628007434D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4507E9BB217B2628007434D4 /* AppDelegate.swift */; };
 		4507E9C1217B2628007434D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4507E9BF217B2628007434D4 /* Main.storyboard */; };
 		4507E9C3217B262A007434D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4507E9C2217B262A007434D4 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		45E39D24217EF9400071050B /* RedditListingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D1C217EF9400071050B /* RedditListingData.swift */; };
 		45E39D25217EF9400071050B /* RedditClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D1D217EF9400071050B /* RedditClient.swift */; };
 		45E39D26217EF9400071050B /* RedditClientProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E39D1E217EF9400071050B /* RedditClientProtocols.swift */; };
+		8ADDC30FB98245BAF8A0C15A /* Pods_PugMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57858369D4BCC31BFF14C77 /* Pods_PugMe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DA52A33691679A1175CD812 /* Pods-PugMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMeTests.release.xcconfig"; path = "Target Support Files/Pods-PugMeTests/Pods-PugMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		11966CD1C18820388772BC6C /* Pods_PugMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PugMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		171A1582E7EA14A747213CC1 /* Pods-PugMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMe.debug.xcconfig"; path = "Target Support Files/Pods-PugMe/Pods-PugMe.debug.xcconfig"; sourceTree = "<group>"; };
 		4507E9B8217B2627007434D4 /* PugMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PugMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4507E9BB217B2628007434D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4507E9C0217B2628007434D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,10 +67,9 @@
 		45E39D1C217EF9400071050B /* RedditListingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditListingData.swift; sourceTree = "<group>"; };
 		45E39D1D217EF9400071050B /* RedditClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditClient.swift; sourceTree = "<group>"; };
 		45E39D1E217EF9400071050B /* RedditClientProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditClientProtocols.swift; sourceTree = "<group>"; };
-		61E7CE8F583C8D7A3DE785D4 /* Pods-PugMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMe.release.xcconfig"; path = "Target Support Files/Pods-PugMe/Pods-PugMe.release.xcconfig"; sourceTree = "<group>"; };
-		A4086BA65056C24A46AED26A /* Pods-PugMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMeTests.release.xcconfig"; path = "Target Support Files/Pods-PugMeTests/Pods-PugMeTests.release.xcconfig"; sourceTree = "<group>"; };
-		C3134514F767C8E4416581F0 /* Pods-PugMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMeTests.debug.xcconfig"; path = "Target Support Files/Pods-PugMeTests/Pods-PugMeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F3C27BA6CDF2AB730538031E /* Pods-PugMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMe.debug.xcconfig"; path = "Target Support Files/Pods-PugMe/Pods-PugMe.debug.xcconfig"; sourceTree = "<group>"; };
+		6D508ADD0A23ABE3DD3957D8 /* Pods-PugMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMeTests.debug.xcconfig"; path = "Target Support Files/Pods-PugMeTests/Pods-PugMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B72619CAC37484778ADD000 /* Pods-PugMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PugMe.release.xcconfig"; path = "Target Support Files/Pods-PugMe/Pods-PugMe.release.xcconfig"; sourceTree = "<group>"; };
+		D57858369D4BCC31BFF14C77 /* Pods_PugMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PugMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				452E58D122889B1D00BFE39F /* Foundation.framework in Frameworks */,
+				8ADDC30FB98245BAF8A0C15A /* Pods_PugMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2449706EBEAD84935B6B03B8 /* Pods_PugMeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				452E58D022889B1D00BFE39F /* Foundation.framework */,
+				D57858369D4BCC31BFF14C77 /* Pods_PugMe.framework */,
+				11966CD1C18820388772BC6C /* Pods_PugMeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,7 +110,7 @@
 				4507EA32217D9DDE007434D4 /* PugMeTests */,
 				4507E9B9217B2627007434D4 /* Products */,
 				42A4F244FCAFDF2B3973D5D0 /* Frameworks */,
-				FE76F247116CB26A24EA0088 /* Pods */,
+				8B45F18ACF80A07FB3A6525C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,14 +181,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		FE76F247116CB26A24EA0088 /* Pods */ = {
+		8B45F18ACF80A07FB3A6525C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F3C27BA6CDF2AB730538031E /* Pods-PugMe.debug.xcconfig */,
-				61E7CE8F583C8D7A3DE785D4 /* Pods-PugMe.release.xcconfig */,
-				C3134514F767C8E4416581F0 /* Pods-PugMeTests.debug.xcconfig */,
-				A4086BA65056C24A46AED26A /* Pods-PugMeTests.release.xcconfig */,
+				171A1582E7EA14A747213CC1 /* Pods-PugMe.debug.xcconfig */,
+				8B72619CAC37484778ADD000 /* Pods-PugMe.release.xcconfig */,
+				6D508ADD0A23ABE3DD3957D8 /* Pods-PugMeTests.debug.xcconfig */,
+				0DA52A33691679A1175CD812 /* Pods-PugMeTests.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -191,7 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4507E9CA217B262A007434D4 /* Build configuration list for PBXNativeTarget "PugMe" */;
 			buildPhases = (
-				43D8780E26320FA94F5691CB /* [CP] Check Pods Manifest.lock */,
+				232DFD0BEE0B9E2343F8D30E /* [CP] Check Pods Manifest.lock */,
 				4507E9B4217B2627007434D4 /* Sources */,
 				4507E9B5217B2627007434D4 /* Frameworks */,
 				4507E9B6217B2627007434D4 /* Resources */,
@@ -209,12 +218,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4507EA38217D9DDE007434D4 /* Build configuration list for PBXNativeTarget "PugMeTests" */;
 			buildPhases = (
-				D59411D6969B2F605327EA84 /* [CP] Check Pods Manifest.lock */,
+				6C182FB36B8CF87488BE4F19 /* [CP] Check Pods Manifest.lock */,
 				4507EA3C217D9ECB007434D4 /* Generate Mocks */,
 				4507EA2D217D9DDE007434D4 /* Sources */,
 				4507EA2E217D9DDE007434D4 /* Frameworks */,
 				4507EA2F217D9DDE007434D4 /* Resources */,
-				A912E15FCF65177E6FCD519E /* [CP] Embed Pods Frameworks */,
+				9E3C896F5F344204C645AECD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,7 +295,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		43D8780E26320FA94F5691CB /* [CP] Check Pods Manifest.lock */ = {
+		232DFD0BEE0B9E2343F8D30E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -316,8 +325,8 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				$SRCROOT/PugMe/Networking/DataProtocols.swift,
-				$SRCROOT/PugMe/RedditClient/RedditClientProtocols.swift,
+				"$SRCROOT/PugMe/Networking/DataProtocols.swift",
+				"$SRCROOT/PugMe/RedditClient/RedditClientProtocols.swift",
 			);
 			name = "Generate Mocks";
 			outputFileListPaths = (
@@ -329,7 +338,29 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PROJECT_DIR}/Scripts/Generate-Cuckoo-Mocks.sh\"\n";
 		};
-		A912E15FCF65177E6FCD519E /* [CP] Embed Pods Frameworks */ = {
+		6C182FB36B8CF87488BE4F19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PugMeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E3C896F5F344204C645AECD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -351,28 +382,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PugMeTests/Pods-PugMeTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D59411D6969B2F605327EA84 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PugMeTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -556,7 +565,7 @@
 		};
 		4507E9CB217B262A007434D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3C27BA6CDF2AB730538031E /* Pods-PugMe.debug.xcconfig */;
+			baseConfigurationReference = 171A1582E7EA14A747213CC1 /* Pods-PugMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -575,7 +584,7 @@
 		};
 		4507E9CC217B262A007434D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61E7CE8F583C8D7A3DE785D4 /* Pods-PugMe.release.xcconfig */;
+			baseConfigurationReference = 8B72619CAC37484778ADD000 /* Pods-PugMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -594,7 +603,7 @@
 		};
 		4507EA39217D9DDE007434D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3134514F767C8E4416581F0 /* Pods-PugMeTests.debug.xcconfig */;
+			baseConfigurationReference = 6D508ADD0A23ABE3DD3957D8 /* Pods-PugMeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -615,7 +624,7 @@
 		};
 		4507EA3A217D9DDE007434D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4086BA65056C24A46AED26A /* Pods-PugMeTests.release.xcconfig */;
+			baseConfigurationReference = 0DA52A33691679A1175CD812 /* Pods-PugMeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
