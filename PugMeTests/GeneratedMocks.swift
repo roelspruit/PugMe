@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: PugMe/Networking/DataProtocols.swift at 2019-05-13 10:56:33 +0000
+// MARK: - Mocks generated from file: PugMe/Networking/DataProtocols.swift at 2019-05-13 11:01:49 +0000
 
 //
 //  DataProtocols.swift
@@ -48,21 +48,6 @@ import Foundation
         
     }
     
-    
-    
-     func getData(withRequest request: URLRequest, handler: @escaping (Data?, Error?) -> Void)  {
-        
-            return cuckoo_manager.call("getData(withRequest: URLRequest, handler: @escaping (Data?, Error?) -> Void)",
-                parameters: (request, handler),
-                escapingParameters: (request, handler),
-                superclassCall:
-                    
-                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
-                    ,
-                defaultCall: __defaultImplStub!.getData(withRequest: request, handler: handler))
-        
-    }
-    
 
 	 struct __StubbingProxy_DataRequesting: Cuckoo.StubbingProxy {
 	    private let cuckoo_manager: Cuckoo.MockManager
@@ -75,11 +60,6 @@ import Foundation
 	    func getData<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(fromUrl url: M1, handler: M2) -> Cuckoo.ProtocolStubNoReturnFunction<(URL, (Data?, Error?) -> Void)> where M1.MatchedType == URL, M2.MatchedType == (Data?, Error?) -> Void {
 	        let matchers: [Cuckoo.ParameterMatcher<(URL, (Data?, Error?) -> Void)>] = [wrap(matchable: url) { $0.0 }, wrap(matchable: handler) { $0.1 }]
 	        return .init(stub: cuckoo_manager.createStub(for: MockDataRequesting.self, method: "getData(fromUrl: URL, handler: @escaping (Data?, Error?) -> Void)", parameterMatchers: matchers))
-	    }
-	    
-	    func getData<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(withRequest request: M1, handler: M2) -> Cuckoo.ProtocolStubNoReturnFunction<(URLRequest, (Data?, Error?) -> Void)> where M1.MatchedType == URLRequest, M2.MatchedType == (Data?, Error?) -> Void {
-	        let matchers: [Cuckoo.ParameterMatcher<(URLRequest, (Data?, Error?) -> Void)>] = [wrap(matchable: request) { $0.0 }, wrap(matchable: handler) { $0.1 }]
-	        return .init(stub: cuckoo_manager.createStub(for: MockDataRequesting.self, method: "getData(withRequest: URLRequest, handler: @escaping (Data?, Error?) -> Void)", parameterMatchers: matchers))
 	    }
 	    
 	}
@@ -104,12 +84,6 @@ import Foundation
 	        return cuckoo_manager.verify("getData(fromUrl: URL, handler: @escaping (Data?, Error?) -> Void)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
 	    }
 	    
-	    @discardableResult
-	    func getData<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(withRequest request: M1, handler: M2) -> Cuckoo.__DoNotUse<Void> where M1.MatchedType == URLRequest, M2.MatchedType == (Data?, Error?) -> Void {
-	        let matchers: [Cuckoo.ParameterMatcher<(URLRequest, (Data?, Error?) -> Void)>] = [wrap(matchable: request) { $0.0 }, wrap(matchable: handler) { $0.1 }]
-	        return cuckoo_manager.verify("getData(withRequest: URLRequest, handler: @escaping (Data?, Error?) -> Void)", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
-	    }
-	    
 	}
 
 }
@@ -121,10 +95,6 @@ import Foundation
 
     
      func getData(fromUrl url: URL, handler: @escaping (Data?, Error?) -> Void)  {
-        return DefaultValueRegistry.defaultValue(for: Void.self)
-    }
-    
-     func getData(withRequest request: URLRequest, handler: @escaping (Data?, Error?) -> Void)  {
         return DefaultValueRegistry.defaultValue(for: Void.self)
     }
     
