@@ -10,12 +10,12 @@ import Foundation
 import FBSnapshotTestCase
 import Cuckoo
 
-@testable import PugMe
+@testable import UpdatingImageView
 
 class ImageViewControllerTests: FBSnapshotTestCase {
     
-    var mockPresenter: MockImageViewPresenting!
-    var imageViewController: ImageViewController!
+    private var mockPresenter: MockImageViewPresenting!
+    private var imageViewController: ImageViewController!
     
     override func setUp() {
         super.setUp()

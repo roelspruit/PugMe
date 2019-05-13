@@ -1,5 +1,5 @@
 //
-//  ImageViewBuilder.swift
+//  UpdatingImageViewBuilder.swift
 //  PugMe
 //
 //  Created by Roel Spruit on 20/10/2018.
@@ -9,10 +9,9 @@
 import Foundation
 import UIKit
 
-struct ImageViewBuilder: ImageViewBuilding {
+public struct UpdatingImageViewBuilder {
     
-    func build(imageDownloader: ImageDownloading,
-                      imageUrlProvider: ImageUrlProviding) -> UIViewController {
+    public static func build(imageDownloader: ImageDownloading, imageUrlProvider: ImageUrlProviding) -> UIViewController {
         
         let view = ImageViewController()
         let presenter = ImageViewPresenter(view: view,

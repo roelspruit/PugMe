@@ -2,7 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:PugMe.xcodeproj">
+      location = "group:PugMe.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/RedditClient/RedditClient.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Modules/UpdatingImageView/UpdatingImageView.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

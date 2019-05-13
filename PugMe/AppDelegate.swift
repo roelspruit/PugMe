@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import UpdatingImageView
+import RedditClient
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,13 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let dataRequester = URLSessionDataRequester()
         let imageDownloader = ImageDownloader(dataRequester: dataRequester)
-        let redditClient = Reddit(clientId: redditClientId, dataRequester: dataRequester)
+        let redditClient = RedditClientBuilder.build(redditClientId: redditClientId, dataRequester: dataRequester)
         let imageUrlProvider = RedditImageURLProvider(subreddit: subreddit, client: redditClient)
-        let imageViewBuilder = ImageViewBuilder()
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = imageViewBuilder.build(imageDownloader: imageDownloader,
-                                                                 imageUrlProvider: imageUrlProvider)
+        self.window?.rootViewController = UpdatingImageViewBuilder.build(imageDownloader: imageDownloader,
+                                                                         imageUrlProvider: imageUrlProvider)
         self.window?.makeKeyAndVisible()
         
         return true

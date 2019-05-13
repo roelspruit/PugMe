@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4507E9B7217B2627007434D4"
-               BuildableName = "PugMe.app"
-               BlueprintName = "PugMe"
-               ReferencedContainer = "container:PugMe.xcodeproj">
+               BlueprintIdentifier = "458662E322886D90001A2D8D"
+               BuildableName = "UpdatingImageView.framework"
+               BlueprintName = "UpdatingImageView"
+               ReferencedContainer = "container:UpdatingImageView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,19 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4507EA30217D9DDE007434D4"
-               BuildableName = "PugMeTests.xctest"
-               BlueprintName = "PugMeTests"
-               ReferencedContainer = "container:PugMe.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
@@ -46,17 +35,17 @@
                BlueprintIdentifier = "4586630722887051001A2D8D"
                BuildableName = "UpdatingImageViewTests.xctest"
                BlueprintName = "UpdatingImageViewTests"
-               ReferencedContainer = "container:Modules/UpdatingImageView/UpdatingImageView.xcodeproj">
+               ReferencedContainer = "container:UpdatingImageView.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4507E9B7217B2627007434D4"
-            BuildableName = "PugMe.app"
-            BlueprintName = "PugMe"
-            ReferencedContainer = "container:PugMe.xcodeproj">
+            BlueprintIdentifier = "458662E322886D90001A2D8D"
+            BuildableName = "UpdatingImageView.framework"
+            BlueprintName = "UpdatingImageView"
+            ReferencedContainer = "container:UpdatingImageView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -72,28 +61,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4507E9B7217B2627007434D4"
-            BuildableName = "PugMe.app"
-            BlueprintName = "PugMe"
-            ReferencedContainer = "container:PugMe.xcodeproj">
+            BlueprintIdentifier = "458662E322886D90001A2D8D"
+            BuildableName = "UpdatingImageView.framework"
+            BlueprintName = "UpdatingImageView"
+            ReferencedContainer = "container:UpdatingImageView.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "FB_REFERENCE_IMAGE_DIR"
-            value = "$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/ReferenceImages"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-         <EnvironmentVariable
-            key = "IMAGE_DIFF_DIR"
-            value = "$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/FailureDiffs"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -103,16 +79,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4507E9B7217B2627007434D4"
-            BuildableName = "PugMe.app"
-            BlueprintName = "PugMe"
-            ReferencedContainer = "container:PugMe.xcodeproj">
+            BlueprintIdentifier = "458662E322886D90001A2D8D"
+            BuildableName = "UpdatingImageView.framework"
+            BlueprintName = "UpdatingImageView"
+            ReferencedContainer = "container:UpdatingImageView.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

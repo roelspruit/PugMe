@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol ImageUrlProviding {
+public protocol ImageUrlProviding {
     func getImageUrls(completion: @escaping ([URL]?) -> Void)
 }

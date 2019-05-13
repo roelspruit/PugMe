@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import UpdatingImageView
+import RedditClient
 
-class RedditImageURLProvider: ImageUrlProviding {
+final class RedditImageURLProvider: ImageUrlProviding {
 
     private let subreddit: String
     private let reddit: RedditClient

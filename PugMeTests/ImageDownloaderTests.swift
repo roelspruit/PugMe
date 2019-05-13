@@ -8,6 +8,7 @@
 
 import XCTest
 import Cuckoo
+import UpdatingImageView
 
 @testable import PugMe
 

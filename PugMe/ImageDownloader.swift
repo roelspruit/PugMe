@@ -8,8 +8,9 @@
 
 import Foundation
 import UIKit
+import UpdatingImageView
 
-class ImageDownloader: ImageDownloading {
+final class ImageDownloader: ImageDownloading {
     
     private let dataRequester: DataRequesting
     
