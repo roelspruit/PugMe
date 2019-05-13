@@ -23,8 +23,6 @@
 		4586631B22887176001A2D8D /* ImageViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586631522887066001A2D8D /* ImageViewPresenterTests.swift */; };
 		4586631E228873E2001A2D8D /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4586631D228873E2001A2D8D /* GeneratedMocks.swift */; };
 		4586632122888169001A2D8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4586632022888169001A2D8D /* Foundation.framework */; };
-		752CAF28E4D702AB89745EA6 /* Pods_UpdatingImageViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7EC265C388EFDF14E793B9 /* Pods_UpdatingImageViewTests.framework */; };
-		A8A5AA29E4685E8A6F042CEF /* Pods_UpdatingImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F33F022DF82D6859DC040E /* Pods_UpdatingImageView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,9 +58,6 @@
 		5B5E003B398246C677B434D3 /* Pods-UpdatingImageViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpdatingImageViewTests.debug.xcconfig"; path = "Target Support Files/Pods-UpdatingImageViewTests/Pods-UpdatingImageViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D093D0E8E56D6A117AACFE3 /* Pods-UpdatingImageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpdatingImageView.debug.xcconfig"; path = "Target Support Files/Pods-UpdatingImageView/Pods-UpdatingImageView.debug.xcconfig"; sourceTree = "<group>"; };
 		65D3DDAF1031B351F2056647 /* Pods-UpdatingImageViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpdatingImageViewTests.release.xcconfig"; path = "Target Support Files/Pods-UpdatingImageViewTests/Pods-UpdatingImageViewTests.release.xcconfig"; sourceTree = "<group>"; };
-		84F33F022DF82D6859DC040E /* Pods_UpdatingImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpdatingImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCCAC756E2C783A03953CB93 /* Pods_UpdatingImageView_UpdatingImageViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpdatingImageView_UpdatingImageViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE7EC265C388EFDF14E793B9 /* Pods_UpdatingImageViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UpdatingImageViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +66,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4586632122888169001A2D8D /* Foundation.framework in Frameworks */,
-				A8A5AA29E4685E8A6F042CEF /* Pods_UpdatingImageView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +75,6 @@
 			files = (
 				452E58D222889B3300BFE39F /* Foundation.framework in Frameworks */,
 				4586630D22887051001A2D8D /* UpdatingImageView.framework in Frameworks */,
-				752CAF28E4D702AB89745EA6 /* Pods_UpdatingImageViewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,9 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				4586632022888169001A2D8D /* Foundation.framework */,
-				EE7EC265C388EFDF14E793B9 /* Pods_UpdatingImageViewTests.framework */,
-				BCCAC756E2C783A03953CB93 /* Pods_UpdatingImageView_UpdatingImageViewTests.framework */,
-				84F33F022DF82D6859DC040E /* Pods_UpdatingImageView.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
