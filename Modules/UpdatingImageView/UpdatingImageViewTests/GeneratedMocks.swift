@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: UpdatingImageView/Protocol/ImageDownloading.swift at 2019-05-12 18:17:49 +0000
+// MARK: - Mocks generated from file: UpdatingImageView/Protocol/ImageDownloading.swift at 2019-05-13 07:20:50 +0000
 
 //
 //  ImageDownloading.swift
@@ -102,7 +102,7 @@ public class ImageDownloadingStub: ImageDownloading {
 }
 
 
-// MARK: - Mocks generated from file: UpdatingImageView/Protocol/ImageUrlProviding.swift at 2019-05-12 18:17:49 +0000
+// MARK: - Mocks generated from file: UpdatingImageView/Protocol/ImageUrlProviding.swift at 2019-05-13 07:20:50 +0000
 
 //
 //  ImageUrlProviding.swift
@@ -205,7 +205,7 @@ public class ImageUrlProvidingStub: ImageUrlProviding {
 }
 
 
-// MARK: - Mocks generated from file: UpdatingImageView/Protocol/ImageViewPresenting.swift at 2019-05-12 18:17:49 +0000
+// MARK: - Mocks generated from file: UpdatingImageView/Protocol/ImageViewPresenting.swift at 2019-05-13 07:20:50 +0000
 
 //
 //  ImageViewPresenting.swift
@@ -338,7 +338,7 @@ import Foundation
 }
 
 
-// MARK: - Mocks generated from file: UpdatingImageView/Protocol/ImageViewing.swift at 2019-05-12 18:17:49 +0000
+// MARK: - Mocks generated from file: UpdatingImageView/Protocol/ImageViewing.swift at 2019-05-13 07:20:50 +0000
 
 //
 //  ImageViewing.swift
@@ -369,6 +369,20 @@ import UIKit
         cuckoo_manager.enableDefaultStubImplementation()
     }
 
+    
+    
+    
+     var presenter: ImageViewPresenting? {
+        get {
+            return cuckoo_manager.getter("presenter",
+                superclassCall:
+                    
+                    Cuckoo.MockManager.crashOnProtocolSuperclassCall()
+                    ,
+                defaultCall: __defaultImplStub!.presenter)
+        }
+        
+    }
     
 
     
@@ -427,6 +441,10 @@ import UIKit
 	        self.cuckoo_manager = manager
 	    }
 	    
+	    var presenter: Cuckoo.ProtocolToBeStubbedReadOnlyProperty<MockImageViewing, ImageViewPresenting?> {
+	        return .init(manager: cuckoo_manager, name: "presenter")
+	    }
+	    
 	    
 	    func showImage<M1: Cuckoo.Matchable>(_ image: M1) -> Cuckoo.ProtocolStubNoReturnFunction<(UIImage)> where M1.MatchedType == UIImage {
 	        let matchers: [Cuckoo.ParameterMatcher<(UIImage)>] = [wrap(matchable: image) { $0 }]
@@ -457,6 +475,10 @@ import UIKit
 	    }
 	
 	    
+	    var presenter: Cuckoo.VerifyReadOnlyProperty<ImageViewPresenting?> {
+	        return .init(manager: cuckoo_manager, name: "presenter", callMatcher: callMatcher, sourceLocation: sourceLocation)
+	    }
+	    
 	
 	    
 	    @discardableResult
@@ -482,6 +504,13 @@ import UIKit
 }
 
  class ImageViewingStub: ImageViewing {
+    
+     var presenter: ImageViewPresenting? {
+        get {
+            return DefaultValueRegistry.defaultValue(for: (ImageViewPresenting?).self)
+        }
+        
+    }
     
 
     

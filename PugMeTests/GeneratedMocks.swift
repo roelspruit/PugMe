@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: PugMe/Networking/DataProtocols.swift at 2019-05-12 18:17:49 +0000
+// MARK: - Mocks generated from file: PugMe/Networking/DataProtocols.swift at 2019-05-13 07:20:52 +0000
 
 //
 //  DataProtocols.swift
@@ -131,7 +131,7 @@ import Foundation
 }
 
 
-// MARK: - Mocks generated from file: PugMe/RedditClient/RedditClientProtocols.swift at 2019-05-12 18:17:49 +0000
+// MARK: - Mocks generated from file: PugMe/RedditClient/RedditClientProtocols.swift at 2019-05-13 07:20:52 +0000
 
 //
 //  Protocols.swift

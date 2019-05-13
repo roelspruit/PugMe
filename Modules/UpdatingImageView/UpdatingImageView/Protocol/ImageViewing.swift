@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 protocol ImageViewing: AnyObject {
+    var presenter: ImageViewPresenting? { get }
     func showImage(_ image: UIImage)
     func showRefreshState()
     func showError()

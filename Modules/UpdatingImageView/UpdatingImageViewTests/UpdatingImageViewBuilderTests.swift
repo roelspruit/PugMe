@@ -16,12 +16,15 @@ class UpdatingImageViewBuilderTests: XCTestCase {
         
         let mockImageDownloader = MockImageDownloading()
         let mockImageUrlProvider = MockImageUrlProviding()
-        let viewController = UpdatingImageViewBuilder.build(imageDownloader: mockImageDownloader,
-                                           imageUrlProvider: mockImageUrlProvider)
+        let view = UpdatingImageViewBuilder.build(imageDownloader: mockImageDownloader,
+                                                            imageUrlProvider: mockImageUrlProvider)
         
-        XCTAssertTrue(viewController is ImageViewing)
+        guard let imageViewing = view as? ImageViewing else {
+            XCTFail("View returned from builder is not of correct type")
+            return
+        }
         
-        let imageViewController = viewController as! ImageViewController
-        XCTAssertNotNil(imageViewController.presenter)
+        XCTAssertNotNil(imageViewing.presenter)
+        XCTAssertTrue(imageViewing.presenter is ImageViewPresenter)
     }
 }

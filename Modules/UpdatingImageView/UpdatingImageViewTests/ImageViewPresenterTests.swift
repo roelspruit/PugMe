@@ -13,10 +13,10 @@ import Cuckoo
 
 class ImageViewPresenterTests: XCTestCase {
     
-    var mockView = MockImageViewing()
-    var mockImageDownloader = MockImageDownloading()
-    var mockImageUrlProvider = MockImageUrlProviding()
-    var presenter: ImageViewPresenter!
+    private var mockView = MockImageViewing()
+    private var mockImageDownloader = MockImageDownloading()
+    private var mockImageUrlProvider = MockImageUrlProviding()
+    private var presenter: ImageViewPresenter!
     
     func a() { print ("something") }
     

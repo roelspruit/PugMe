@@ -14,8 +14,8 @@ import Cuckoo
 
 class ImageViewControllerTests: FBSnapshotTestCase {
     
-    var mockPresenter: MockImageViewPresenting!
-    var imageViewController: ImageViewController!
+    private var mockPresenter: MockImageViewPresenting!
+    private var imageViewController: ImageViewController!
     
     override func setUp() {
         super.setUp()
