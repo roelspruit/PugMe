@@ -122,9 +122,9 @@
 		458662E622886D90001A2D8D /* UpdatingImageView */ = {
 			isa = PBXGroup;
 			children = (
-				458662F822886DCB001A2D8D /* View */,
-				458662F622886DC5001A2D8D /* Protocol */,
-				458662F022886DA8001A2D8D /* Presenter */,
+				458662F822886DCB001A2D8D /* Views */,
+				458662F622886DC5001A2D8D /* Protocols */,
+				458662F022886DA8001A2D8D /* Presenters */,
 				458662E722886D90001A2D8D /* UpdatingImageView.h */,
 				458662F922886DD3001A2D8D /* UpdatingImageViewBuilder.swift */,
 				458662E822886D90001A2D8D /* Info.plist */,
@@ -132,15 +132,15 @@
 			path = UpdatingImageView;
 			sourceTree = "<group>";
 		};
-		458662F022886DA8001A2D8D /* Presenter */ = {
+		458662F022886DA8001A2D8D /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
 				458662EF22886DA8001A2D8D /* ImageViewPresenter.swift */,
 			);
-			path = Presenter;
+			path = Presenters;
 			sourceTree = "<group>";
 		};
-		458662F622886DC5001A2D8D /* Protocol */ = {
+		458662F622886DC5001A2D8D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				458662F122886DC5001A2D8D /* ImageViewing.swift */,
@@ -148,15 +148,15 @@
 				458662F322886DC5001A2D8D /* ImageUrlProviding.swift */,
 				458662F422886DC5001A2D8D /* ImageDownloading.swift */,
 			);
-			path = Protocol;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
-		458662F822886DCB001A2D8D /* View */ = {
+		458662F822886DCB001A2D8D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				458662F722886DCB001A2D8D /* ImageViewController.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		4586630922887051001A2D8D /* UpdatingImageViewTests */ = {
@@ -299,10 +299,10 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$SRCROOT/UpdatingImageView/Protocol/ImageUrlProviding.swift",
-				"$SRCROOT/UpdatingImageView/Protocol/ImageViewPresenting.swift",
-				"$SRCROOT/UpdatingImageView/Protocol/ImageViewing.swift",
-				"$SRCROOT/UpdatingImageView/Protocol/ImageDownloading.swift",
+				$SRCROOT/UpdatingImageView/Protocols/ImageUrlProviding.swift,
+				$SRCROOT/UpdatingImageView/Protocols/ImageViewPresenting.swift,
+				$SRCROOT/UpdatingImageView/Protocols/ImageViewing.swift,
+				$SRCROOT/UpdatingImageView/Protocols/ImageDownloading.swift,
 			);
 			name = "Generate Cuckoo Mocks";
 			outputFileListPaths = (

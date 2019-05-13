@@ -9,12 +9,12 @@
 import Foundation
 
 /// A rudimentary client for the Reddit API
-class Reddit: RedditClient {
+final class Reddit: RedditClient {
     
     private let clientId: String
-    private let dataRequester: DataRequesting
+    private let dataRequester: RedditDataRequesting
     
-    init(clientId: String, dataRequester: DataRequesting) {
+    init(clientId: String, dataRequester: RedditDataRequesting) {
         self.clientId = clientId
         self.dataRequester = dataRequester
     }

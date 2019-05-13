@@ -1,5 +1,5 @@
 //
-//  RedditListing.swift
+//  RedditListingResponseData.swift
 //  PugMe
 //
 //  Created by Roel Spruit on 20/10/2018.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct RedditListing: Decodable {
-    let data: RedditListingData
+public struct RedditListingResponseData: Decodable {
+    public let children: [RedditListing]
 }

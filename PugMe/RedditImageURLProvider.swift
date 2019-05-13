@@ -8,6 +8,7 @@
 
 import Foundation
 import UpdatingImageView
+import RedditClient
 
 class RedditImageURLProvider: ImageUrlProviding {
 

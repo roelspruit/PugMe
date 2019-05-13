@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: UpdatingImageView/Protocol/ImageDownloading.swift at 2019-05-13 07:20:50 +0000
+// MARK: - Mocks generated from file: UpdatingImageView/Protocols/ImageDownloading.swift at 2019-05-13 10:56:33 +0000
 
 //
 //  ImageDownloading.swift
@@ -102,7 +102,7 @@ public class ImageDownloadingStub: ImageDownloading {
 }
 
 
-// MARK: - Mocks generated from file: UpdatingImageView/Protocol/ImageUrlProviding.swift at 2019-05-13 07:20:50 +0000
+// MARK: - Mocks generated from file: UpdatingImageView/Protocols/ImageUrlProviding.swift at 2019-05-13 10:56:33 +0000
 
 //
 //  ImageUrlProviding.swift
@@ -205,7 +205,7 @@ public class ImageUrlProvidingStub: ImageUrlProviding {
 }
 
 
-// MARK: - Mocks generated from file: UpdatingImageView/Protocol/ImageViewPresenting.swift at 2019-05-13 07:20:50 +0000
+// MARK: - Mocks generated from file: UpdatingImageView/Protocols/ImageViewPresenting.swift at 2019-05-13 10:56:33 +0000
 
 //
 //  ImageViewPresenting.swift
@@ -338,7 +338,7 @@ import Foundation
 }
 
 
-// MARK: - Mocks generated from file: UpdatingImageView/Protocol/ImageViewing.swift at 2019-05-13 07:20:50 +0000
+// MARK: - Mocks generated from file: UpdatingImageView/Protocols/ImageViewing.swift at 2019-05-13 10:56:33 +0000
 
 //
 //  ImageViewing.swift

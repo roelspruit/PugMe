@@ -9,6 +9,5 @@
 import Foundation
 
 protocol DataRequesting {
-    func getData(fromUrl url: URL, handler: @escaping (Data?, Error?) -> Void)
-    func getData(withRequest request: URLRequest, handler: @escaping (Data?, Error?) -> Void)
+    func getData(fromUrl url: URL, handler: @escaping (Data?, Error?) -> Void)    
 }

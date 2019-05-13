@@ -7,12 +7,16 @@
 //
 
 import Foundation
+import RedditClient
 
 class URLSessionDataRequester: DataRequesting {
     
     func getData(fromUrl url: URL, handler: @escaping (Data?, Error?) -> Void) {
         getData(withRequest: URLRequest(url: url), handler: handler)
     }
+}
+
+extension URLSessionDataRequester: RedditDataRequesting {
     
     func getData(withRequest request: URLRequest, handler: @escaping (Data?, Error?) -> Void) {
         let task = URLSession.shared.dataTask(with: request) { (data, _, error) in
@@ -22,5 +26,4 @@ class URLSessionDataRequester: DataRequesting {
         }
         task.resume()
     }
-    
 }
