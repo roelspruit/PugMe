@@ -13,6 +13,7 @@
 		452E58E42289EED700BFE39F /* RedditClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E41A3D2289819E00219D31 /* RedditClient.framework */; };
 		452E58EB228A959400BFE39F /* RedditDeviceIDStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452E58EA228A959400BFE39F /* RedditDeviceIDStoring.swift */; };
 		452E58F0228A993E00BFE39F /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452E58EF228A993E00BFE39F /* GeneratedMocks.swift */; };
+		4544C9BA228AD11F008FF7FB /* RedditTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4544C9B9228AD11F008FF7FB /* RedditTests.swift */; };
 		45E41A64228981B300219D31 /* RedditClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E41A61228981B300219D31 /* RedditClient.swift */; };
 		45E41A66228981B500219D31 /* Reddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E41A65228981B500219D31 /* Reddit.swift */; };
 		45E41A6D228981C600219D31 /* RedditListingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E41A67228981B700219D31 /* RedditListingResponse.swift */; };
@@ -46,6 +47,7 @@
 		452E58E32289EED700BFE39F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		452E58EA228A959400BFE39F /* RedditDeviceIDStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditDeviceIDStoring.swift; sourceTree = "<group>"; };
 		452E58EF228A993E00BFE39F /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		4544C9B9228AD11F008FF7FB /* RedditTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditTests.swift; sourceTree = "<group>"; };
 		45E41A3D2289819E00219D31 /* RedditClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RedditClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E41A412289819E00219D31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45E41A61228981B300219D31 /* RedditClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditClient.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				452E58EF228A993E00BFE39F /* GeneratedMocks.swift */,
 				452E58E12289EED700BFE39F /* RedditRequestBuilderTests.swift */,
 				452E58E32289EED700BFE39F /* Info.plist */,
+				4544C9B9228AD11F008FF7FB /* RedditTests.swift */,
 			);
 			path = RedditClientTests;
 			sourceTree = "<group>";
@@ -188,8 +191,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 452E58E72289EED700BFE39F /* Build configuration list for PBXNativeTarget "RedditClientTests" */;
 			buildPhases = (
-				452E58EE228A98C400BFE39F /* Generate Cuckoo Mocks */,
 				45291568BB8D67CBB0EF501F /* [CP] Check Pods Manifest.lock */,
+				452E58EE228A98C400BFE39F /* Generate Cuckoo Mocks */,
 				452E58DB2289EED700BFE39F /* Sources */,
 				452E58DC2289EED700BFE39F /* Frameworks */,
 				452E58DD2289EED700BFE39F /* Resources */,
@@ -375,6 +378,7 @@
 			files = (
 				452E58E22289EED700BFE39F /* RedditRequestBuilderTests.swift in Sources */,
 				452E58F0228A993E00BFE39F /* GeneratedMocks.swift in Sources */,
+				4544C9BA228AD11F008FF7FB /* RedditTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

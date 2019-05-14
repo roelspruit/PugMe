@@ -55,6 +55,7 @@
 		452E58D022889B1D00BFE39F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		452E58D422889BB300BFE39F /* pug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pug.png; sourceTree = "<group>"; };
 		452E58EC228A967800BFE39F /* RedditDeviceIDStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditDeviceIDStore.swift; sourceTree = "<group>"; };
+		4544C9DF228AD735008FF7FB /* Pugs.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Pugs.xcconfig; sourceTree = "<group>"; };
 		455CDD442260DBB500AEC54B /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		455CDD462260DC2800AEC54B /* RedditImageURLProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditImageURLProvider.swift; sourceTree = "<group>"; };
 		45E41A722289820900219D31 /* RedditClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RedditClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,15 +123,15 @@
 		4507E9BA217B2627007434D4 /* PugMe */ = {
 			isa = PBXGroup;
 			children = (
+				4544C9BB228AD2C3008FF7FB /* Storyboards */,
 				4507E9DA217B33C3007434D4 /* Networking */,
 				4507E9BB217B2628007434D4 /* AppDelegate.swift */,
 				455CDD442260DBB500AEC54B /* ImageDownloader.swift */,
-				4507E9BF217B2628007434D4 /* Main.storyboard */,
 				455CDD462260DC2800AEC54B /* RedditImageURLProvider.swift */,
 				452E58EC228A967800BFE39F /* RedditDeviceIDStore.swift */,
 				4507E9C2217B262A007434D4 /* Assets.xcassets */,
-				4507E9C4217B262A007434D4 /* LaunchScreen.storyboard */,
 				4507E9C7217B262A007434D4 /* Info.plist */,
+				4544C9DF228AD735008FF7FB /* Pugs.xcconfig */,
 			);
 			path = PugMe;
 			sourceTree = "<group>";
@@ -153,6 +154,15 @@
 				4507EA33217D9DDE007434D4 /* ImageDownloaderTests.swift */,
 			);
 			path = PugMeTests;
+			sourceTree = "<group>";
+		};
+		4544C9BB228AD2C3008FF7FB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4507E9BF217B2628007434D4 /* Main.storyboard */,
+				4507E9C4217B262A007434D4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		8B45F18ACF80A07FB3A6525C /* Pods */ = {
@@ -414,6 +424,7 @@
 /* Begin XCBuildConfiguration section */
 		4507E9C8217B262A007434D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4544C9DF228AD735008FF7FB /* Pugs.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -476,6 +487,7 @@
 		};
 		4507E9C9217B262A007434D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4544C9DF228AD735008FF7FB /* Pugs.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;

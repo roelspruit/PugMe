@@ -15,14 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    private let redditClientId = "HHkDDGxz5ygrxw"
-    private let subreddit = "pugs"
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        guard let info = Bundle.main.infoDictionary,
+            let subreddit = info["Subreddit"] as? String,
+            let clientId = info["RedditClientID"] as? String else {
+                fatalError("Incorrect app configuration")
+        }
         
         let dataRequester = URLSessionDataRequester()
         let imageDownloader = ImageDownloader(dataRequester: dataRequester)
-        let redditClient = RedditClientBuilder.build(redditClientId: redditClientId,
+        let redditClient = RedditClientBuilder.build(redditClientId: clientId,
                                                      dataRequester: dataRequester,
                                                      deviceIdStore: RedditDeviceIDStore())
         

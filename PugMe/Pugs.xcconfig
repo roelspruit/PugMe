@@ -1,0 +1,14 @@
+//
+//  Pugs.xcconfig
+//  PugMe
+//
+//  Created by Roel Spruit on 14/05/2019.
+//  Copyright © 2019 DinkyWonder. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+REDDIT_CLIENT_ID = HHkDDGxz5ygrxw
+SUBREDDIT = pugs
+
