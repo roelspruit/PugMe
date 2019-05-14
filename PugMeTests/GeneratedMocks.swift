@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: PugMe/Networking/DataProtocols.swift at 2019-05-13 11:35:21 +0000
+// MARK: - Mocks generated from file: PugMe/Networking/DataProtocols.swift at 2019-05-13 17:38:10 +0000
 
 //
 //  DataProtocols.swift

@@ -9,16 +9,40 @@
 import Foundation
 
 /// A rudimentary client for the Reddit API
-final class Reddit: RedditClient {
+final class Reddit {
     
-    private let clientId: String
+    private let requestBuilder: RedditRequestBuilding
     private let dataRequester: RedditDataRequesting
     
-    init(clientId: String, dataRequester: RedditDataRequesting) {
-        self.clientId = clientId
+    init(requestBuilder: RedditRequestBuilding, dataRequester: RedditDataRequesting) {
+        self.requestBuilder = requestBuilder
         self.dataRequester = dataRequester
     }
     
+    private func authorize(completion: @escaping (RedditAccessTokenResponse?) -> Void) {
+        
+        let request = requestBuilder.getOAuthRequest()
+        
+        self.dataRequester.getData(withRequest: request, handler: { [weak self] (data, error) in
+            
+            let response = self?.decodeJSON(RedditAccessTokenResponse.self, from: data)
+            
+            completion(response)
+        })
+    }
+ 
+    private func decodeJSON<T>(_ type: T.Type, from data: Data?) -> T? where T : Decodable {
+        
+        guard let data = data else {
+            return nil
+        }
+        
+        let decoder = JSONDecoder()
+        return try? decoder.decode(type, from: data)
+    }
+}
+
+extension Reddit: RedditClient {
     
     /// Get all new lists for this subreddit
     ///
@@ -27,72 +51,21 @@ final class Reddit: RedditClient {
     ///   - completion: Completion callback
     func getNewListings(subreddit: String, completion: @escaping (RedditListingResponse?) -> Void) {
         
-        let url = URL(string: "https://oauth.reddit.com/r/\(subreddit)/new?limit=100")!
-        
         authorize { [weak self] (tokenResponse) in
             
-            guard let token = tokenResponse?.access_token else {
+            guard let self = self, let token = tokenResponse?.access_token else {
                 completion(nil)
                 return
             }
             
-            var request = URLRequest(url: url)
-            request.addValue("bearer \(token)", forHTTPHeaderField: "Authorization")
+            let request = self.requestBuilder.getNewListingRequest(subreddit: subreddit, token: token)
             
-            self?.dataRequester.getData(withRequest: request, handler: { (data, error) in
+            self.dataRequester.getData(withRequest: request, handler: { [weak self] (data, error) in
                 
-                guard let data = data else {
-                    completion(nil)
-                    return
-                }
+                let response = self?.decodeJSON(RedditListingResponse.self, from: data)
                 
-                let decoder = JSONDecoder()
-                let response = try? decoder.decode(RedditListingResponse.self, from: data)
                 completion(response)
             })
-        }
-    }
-    
-    private func authorize(completion: @escaping (RedditAccessTokenResponse?) -> Void) {
-        
-        let url = URL(string: "https://www.reddit.com/api/v1/access_token")!
-        
-        let body = "grant_type=https://oauth.reddit.com/grants/installed_client&device_id=\(deviceid)"
-        
-        var request = URLRequest(url: url)
-        request.httpBody = body.data(using: String.Encoding.utf8)
-        request.httpMethod = "POST"
-        request.addValue(getBasicAuthHeader(login: clientId, password: ""), forHTTPHeaderField: "Authorization")
-        
-        self.dataRequester.getData(withRequest: request, handler: { (data, error) in
-            
-            guard let data = data else {
-                completion(nil)
-                return
-            }
-            
-            let decoder = JSONDecoder()
-            let response = try? decoder.decode(RedditAccessTokenResponse.self, from: data)
-            
-            completion(response)
-        })
-    }
-    
-    private func getBasicAuthHeader(login: String, password: String) -> String {
-        let userPasswordString = "\(login):\(password)"
-        let userPasswordData = userPasswordString.data(using: String.Encoding.utf8)
-        let base64EncodedCredential = userPasswordData!.base64EncodedString()
-        return  "Basic \(base64EncodedCredential)"
-    }
-    
-    private var deviceid: String {
-        get {
-            if let id = UserDefaults.standard.string(forKey: "redditDeviceId") {
-                return id
-            }
-            let newId = UUID().uuidString
-            UserDefaults.standard.set(newId, forKey: "redditDeviceId")
-            return newId
         }
     }
 }

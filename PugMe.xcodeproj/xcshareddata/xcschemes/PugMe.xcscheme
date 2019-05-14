@@ -49,6 +49,16 @@
                ReferencedContainer = "container:Modules/UpdatingImageView/UpdatingImageView.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "452E58DE2289EED700BFE39F"
+               BuildableName = "RedditClientTests.xctest"
+               BlueprintName = "RedditClientTests"
+               ReferencedContainer = "container:Modules/RedditClient/RedditClient.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

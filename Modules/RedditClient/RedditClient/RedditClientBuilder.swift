@@ -9,7 +9,13 @@
 import Foundation
 
 public struct RedditClientBuilder {
-    public static func build(redditClientId: String, dataRequester: RedditDataRequesting) -> RedditClient {
-        return Reddit(clientId: redditClientId, dataRequester: dataRequester)
+    
+    public static func build(redditClientId: String, dataRequester: RedditDataRequesting, deviceIdStore: RedditDeviceIDStoring) -> RedditClient {
+        
+        let requestBuilder = RedditRequestBuilder(clientId: redditClientId,
+                                                  deviceIdStore: deviceIdStore)
+        
+        return Reddit(requestBuilder: requestBuilder,
+                      dataRequester: dataRequester)
     }
 }

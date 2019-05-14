@@ -27,7 +27,17 @@ target 'UpdatingImageView' do
     pod 'iOSSnapshotTestCase'
   end
   
-  
   project './Modules/UpdatingImageView/UpdatingImageView.xcodeproj'
+  
+end
+
+target 'RedditClient' do
+  
+  target 'RedditClientTests' do
+    inherit! :search_paths
+    pod 'Cuckoo'
+  end
+  
+  project './Modules/RedditClient/RedditClient.xcodeproj'
   
 end
