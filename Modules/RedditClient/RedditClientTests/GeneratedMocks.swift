@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: RedditClient/Protocols/RedditDataRequesting.swift at 2019-05-14 10:32:04 +0000
+// MARK: - Mocks generated from file: RedditClient/Protocols/RedditDataRequesting.swift at 2019-05-14 15:18:26 +0000
 
 //
 //  RedditDataRequesting.swift
@@ -101,7 +101,7 @@ public class RedditDataRequestingStub: RedditDataRequesting {
 }
 
 
-// MARK: - Mocks generated from file: RedditClient/Protocols/RedditDeviceIDStoring.swift at 2019-05-14 10:32:04 +0000
+// MARK: - Mocks generated from file: RedditClient/Protocols/RedditDeviceIDStoring.swift at 2019-05-14 15:18:26 +0000
 
 //
 //  RedditDeviceIDStoring.swift
@@ -215,7 +215,7 @@ public class RedditDeviceIDStoringStub: RedditDeviceIDStoring {
 }
 
 
-// MARK: - Mocks generated from file: RedditClient/Protocols/RedditRequestBuilding.swift at 2019-05-14 10:32:04 +0000
+// MARK: - Mocks generated from file: RedditClient/Protocols/RedditRequestBuilding.swift at 2019-05-14 15:18:26 +0000
 
 //
 //  RedditRequestBuilding.swift

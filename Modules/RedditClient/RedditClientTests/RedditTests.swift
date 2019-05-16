@@ -12,11 +12,37 @@ import Cuckoo
 @testable import RedditClient
 
 class RedditTests: XCTestCase {
+    
+    private var mockRedditRequestBuilding: MockRedditRequestBuilding!
+    private var mockDataRequester: MockRedditDataRequesting!
 
+    override func setUp() {
+        super.setUp()
+        
+        mockRedditRequestBuilding = MockRedditRequestBuilding()
+        mockDataRequester = MockRedditDataRequesting()
+    }
+    
     func test_get_new_listings_should_get_oauth_request() {
         
-        let mockRedditRequestBuilding = MockRedditRequestBuilding()
-        let mockDataRequester = MockRedditDataRequesting()
+        let client = getClient()
+        
+        client.getNewListings(subreddit: "some subreddit") { (_) in }
+        
+        verify(mockRedditRequestBuilding).getOAuthRequest()
+    }
+    
+    func test_get_new_listings_should_get_data() {
+        
+        let client = getClient()
+        
+        client.getNewListings(subreddit: "some subreddit") { (_) in }
+        
+        verify(mockDataRequester).getData(withRequest: any(), handler: any())
+    }
+    
+    private func getClient() -> Reddit {
+        
         let client = Reddit(requestBuilder: mockRedditRequestBuilding, dataRequester: mockDataRequester)
         
         stub(mockRedditRequestBuilding) { (stub) in
@@ -27,9 +53,7 @@ class RedditTests: XCTestCase {
             when(stub).getData(withRequest: any(), handler: any()).thenDoNothing()
         }
         
-        client.getNewListings(subreddit: "some subreddit") { (_) in }
-        
-        verify(mockRedditRequestBuilding).getOAuthRequest()
+        return client
     }
 
 }
