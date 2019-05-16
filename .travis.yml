@@ -3,3 +3,6 @@ osx_image: xcode10.1
 xcode_workspace: PugMe.xcworkspace
 xcode_scheme: PugMe
 xcode_sdk: iphonesimulator12.1
+
+before_install:
+  - gem install cocoapods -v '1.6.1'
