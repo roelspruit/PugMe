@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: RedditClient/Protocols/RedditDataRequesting.swift at 2019-05-17 19:45:01 +0000
+// MARK: - Mocks generated from file: RedditClient/Protocols/RedditDataRequesting.swift at 2019-05-17 20:13:30 +0000
 
 //
 //  RedditDataRequesting.swift
@@ -101,7 +101,7 @@ public class RedditDataRequestingStub: RedditDataRequesting {
 }
 
 
-// MARK: - Mocks generated from file: RedditClient/Protocols/RedditDeviceIDStoring.swift at 2019-05-17 19:45:01 +0000
+// MARK: - Mocks generated from file: RedditClient/Protocols/RedditDeviceIDStoring.swift at 2019-05-17 20:13:30 +0000
 
 //
 //  RedditDeviceIDStoring.swift
@@ -215,7 +215,7 @@ public class RedditDeviceIDStoringStub: RedditDeviceIDStoring {
 }
 
 
-// MARK: - Mocks generated from file: RedditClient/Protocols/RedditRequestBuilding.swift at 2019-05-17 19:45:01 +0000
+// MARK: - Mocks generated from file: RedditClient/Protocols/RedditRequestBuilding.swift at 2019-05-17 20:13:30 +0000
 
 //
 //  RedditRequestBuilding.swift
@@ -267,16 +267,16 @@ import Foundation
     
     
     
-     func getNewListingRequest(subreddit: String, token: String)  -> URLRequest {
+     func getNewListingRequest(subreddit: String, previousResponse: RedditListingResponse?, token: String)  -> URLRequest {
         
-            return cuckoo_manager.call("getNewListingRequest(subreddit: String, token: String) -> URLRequest",
-                parameters: (subreddit, token),
-                escapingParameters: (subreddit, token),
+            return cuckoo_manager.call("getNewListingRequest(subreddit: String, previousResponse: RedditListingResponse?, token: String) -> URLRequest",
+                parameters: (subreddit, previousResponse, token),
+                escapingParameters: (subreddit, previousResponse, token),
                 superclassCall:
                     
                     Cuckoo.MockManager.crashOnProtocolSuperclassCall()
                     ,
-                defaultCall: __defaultImplStub!.getNewListingRequest(subreddit: subreddit, token: token))
+                defaultCall: __defaultImplStub!.getNewListingRequest(subreddit: subreddit, previousResponse: previousResponse, token: token))
         
     }
     
@@ -294,9 +294,9 @@ import Foundation
 	        return .init(stub: cuckoo_manager.createStub(for: MockRedditRequestBuilding.self, method: "getOAuthRequest() -> URLRequest", parameterMatchers: matchers))
 	    }
 	    
-	    func getNewListingRequest<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(subreddit: M1, token: M2) -> Cuckoo.ProtocolStubFunction<(String, String), URLRequest> where M1.MatchedType == String, M2.MatchedType == String {
-	        let matchers: [Cuckoo.ParameterMatcher<(String, String)>] = [wrap(matchable: subreddit) { $0.0 }, wrap(matchable: token) { $0.1 }]
-	        return .init(stub: cuckoo_manager.createStub(for: MockRedditRequestBuilding.self, method: "getNewListingRequest(subreddit: String, token: String) -> URLRequest", parameterMatchers: matchers))
+	    func getNewListingRequest<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable, M3: Cuckoo.Matchable>(subreddit: M1, previousResponse: M2, token: M3) -> Cuckoo.ProtocolStubFunction<(String, RedditListingResponse?, String), URLRequest> where M1.MatchedType == String, M2.MatchedType == RedditListingResponse?, M3.MatchedType == String {
+	        let matchers: [Cuckoo.ParameterMatcher<(String, RedditListingResponse?, String)>] = [wrap(matchable: subreddit) { $0.0 }, wrap(matchable: previousResponse) { $0.1 }, wrap(matchable: token) { $0.2 }]
+	        return .init(stub: cuckoo_manager.createStub(for: MockRedditRequestBuilding.self, method: "getNewListingRequest(subreddit: String, previousResponse: RedditListingResponse?, token: String) -> URLRequest", parameterMatchers: matchers))
 	    }
 	    
 	}
@@ -322,9 +322,9 @@ import Foundation
 	    }
 	    
 	    @discardableResult
-	    func getNewListingRequest<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable>(subreddit: M1, token: M2) -> Cuckoo.__DoNotUse<URLRequest> where M1.MatchedType == String, M2.MatchedType == String {
-	        let matchers: [Cuckoo.ParameterMatcher<(String, String)>] = [wrap(matchable: subreddit) { $0.0 }, wrap(matchable: token) { $0.1 }]
-	        return cuckoo_manager.verify("getNewListingRequest(subreddit: String, token: String) -> URLRequest", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
+	    func getNewListingRequest<M1: Cuckoo.Matchable, M2: Cuckoo.Matchable, M3: Cuckoo.Matchable>(subreddit: M1, previousResponse: M2, token: M3) -> Cuckoo.__DoNotUse<URLRequest> where M1.MatchedType == String, M2.MatchedType == RedditListingResponse?, M3.MatchedType == String {
+	        let matchers: [Cuckoo.ParameterMatcher<(String, RedditListingResponse?, String)>] = [wrap(matchable: subreddit) { $0.0 }, wrap(matchable: previousResponse) { $0.1 }, wrap(matchable: token) { $0.2 }]
+	        return cuckoo_manager.verify("getNewListingRequest(subreddit: String, previousResponse: RedditListingResponse?, token: String) -> URLRequest", callMatcher: callMatcher, parameterMatchers: matchers, sourceLocation: sourceLocation)
 	    }
 	    
 	}
@@ -341,7 +341,7 @@ import Foundation
         return DefaultValueRegistry.defaultValue(for: URLRequest.self)
     }
     
-     func getNewListingRequest(subreddit: String, token: String)  -> URLRequest {
+     func getNewListingRequest(subreddit: String, previousResponse: RedditListingResponse?, token: String)  -> URLRequest {
         return DefaultValueRegistry.defaultValue(for: URLRequest.self)
     }
     

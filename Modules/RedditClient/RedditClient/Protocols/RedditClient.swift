@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol RedditClient {
-    func getNewListings(subreddit: String, completion: @escaping (RedditListingResponse?) -> Void )
+    func getNewListings(subreddit: String, previousResponse: RedditListingResponse?, completion: @escaping (RedditListingResponse?) -> Void )
 }

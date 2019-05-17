@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="999fc2e2-52c2-4d92-a6c2-91a8e361feb3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/RedditClientBuilder.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/RedditClientBuilder.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Models/RedditListingResponseData.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Models/RedditListingResponseData.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Protocols/RedditClient.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Protocols/RedditClient.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Protocols/RedditRequestBuilding.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Protocols/RedditRequestBuilding.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Reddit.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Reddit.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/RedditRequestBuilder.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/RedditRequestBuilder.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/RedditClient/RedditClientTests/GeneratedMocks.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/RedditClient/RedditClientTests/GeneratedMocks.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/Presenters/ImageViewPresenter.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/Presenters/ImageViewPresenter.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/UpdatingImageViewBuilder.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/UpdatingImageViewBuilder.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/Views/ImageViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/Views/ImageViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageViewTests/GeneratedMocks.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageViewTests/GeneratedMocks.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/RedditClient/RedditClientTests/RedditRequestBuilderTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/RedditClient/RedditClientTests/RedditRequestBuilderTests.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PugMe/RedditImageURLProvider.swift" beforeDir="false" afterPath="$PROJECT_DIR$/PugMe/RedditImageURLProvider.swift" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/PugMe-ddiwptrjnpdsyjesmspgfmnjdzno/Build/Intermediates.noindex/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +21,71 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_C7FF617F-1D2E-4D42-A507-E79031DFE604" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageViewTests/ImageViewControllerTests.swift">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/Protocols/ImageViewing.swift">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/Protocols/ImageViewPresenting.swift">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/Protocols/ImageUrlProviding.swift">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/Protocols/ImageDownloading.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            <state relative-caret-position="97">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/Presenters/ImageViewPresenter.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClient/Reddit.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClient/RedditRequestBuilder.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClientTests/RedditRequestBuilderTests.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="60" column="102" selection-start-line="60" selection-start-column="102" selection-end-line="60" selection-end-column="102" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClient/Protocols/RedditRequestBuilding.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="91" selection-start-line="12" selection-start-column="91" selection-end-line="12" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -34,6 +95,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>class</find>
+      <find>getNewListingRequest</find>
+      <find>getNewListing</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -49,6 +112,13 @@
         <option value="$PROJECT_DIR$/Modules/RedditClient/RedditClient/RedditClientBuilder.swift" />
         <option value="$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/UpdatingImageViewBuilder.swift" />
         <option value="$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageViewTests/ImageViewControllerTests.swift" />
+        <option value="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Models/RedditListingResponseData.swift" />
+        <option value="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Protocols/RedditClient.swift" />
+        <option value="$PROJECT_DIR$/PugMe/RedditImageURLProvider.swift" />
+        <option value="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Protocols/RedditRequestBuilding.swift" />
+        <option value="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Reddit.swift" />
+        <option value="$PROJECT_DIR$/Modules/RedditClient/RedditClient/RedditRequestBuilder.swift" />
+        <option value="$PROJECT_DIR$/Modules/RedditClient/RedditClientTests/RedditRequestBuilderTests.swift" />
       </list>
     </option>
   </component>
@@ -106,6 +176,12 @@
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="RedditClient" type="1d218c8b:XcodeProjectNode" />
+              <item name="RedditClient" type="fcab9f18:XcodeViewNode" />
+              <item name="Models" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
               <item name="UpdatingImageView" type="1d218c8b:XcodeProjectNode" />
             </path>
             <path>
@@ -157,7 +233,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="XCTest.ImageViewControllerTests">
+  <component name="RunManager" selected="XCTest.All in RedditClientTests">
     <configuration name="All in PugMeTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" singleton="false" nameIsGenerated="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PugMe" TARGET_NAME="PugMeTests" CONFIG_NAME="Debug" SCHEME_NAME="All in PugMeTests" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST" XCODE_TESTS_HASH_CODE="0">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -208,20 +284,11 @@
       <option name="presentableId" value="Default" />
       <updated>1558017810106</updated>
       <workItem from="1558017815480" duration="690000" />
-      <workItem from="1558089892639" duration="2494000" />
+      <workItem from="1558089892639" duration="4078000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_PugMeTests - 2019.05.17 at 12h 51m 40s.xml">
-      <configuration name="All in PugMeTests" configurationId="OCUnitRunConfiguration" />
-    </history-entry>
-    <history-entry file="All_in_PugMeTests - 2019.05.17 at 12h 53m 52s.xml">
-      <configuration name="All in PugMeTests" configurationId="OCUnitRunConfiguration" />
-    </history-entry>
-    <history-entry file="ImageDownloaderTests_testInvalidDataShouldReturnGenericError - 2019.05.17 at 13h 05m 50s.xml">
-      <configuration name="ImageDownloaderTests.testInvalidDataShouldReturnGenericError" configurationId="OCUnitRunConfiguration" />
-    </history-entry>
     <history-entry file="ImageDownloaderTests_testInvalidDataShouldReturnGenericError - 2019.05.17 at 13h 05m 58s.xml">
       <configuration name="ImageDownloaderTests.testInvalidDataShouldReturnGenericError" configurationId="OCUnitRunConfiguration" />
     </history-entry>
@@ -243,9 +310,18 @@
     <history-entry file="ImageViewControllerTests - 2019.05.17 at 21h 47m 20s.xml">
       <configuration name="ImageViewControllerTests" configurationId="OCUnitRunConfiguration" />
     </history-entry>
+    <history-entry file="ImageViewControllerTests - 2019.05.17 at 21h 47m 29s.xml">
+      <configuration name="ImageViewControllerTests" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="ImageViewControllerTests - 2019.05.17 at 21h 57m 12s.xml">
+      <configuration name="ImageViewControllerTests" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="All_in_RedditClientTests - 2019.05.17 at 22h 13m 37s.xml">
+      <configuration name="All in RedditClientTests" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3184000" />
+    <option name="totallyTimeSpent" value="4768000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -288,13 +364,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/Protocols/ImageDownloading.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PugMe/Pugs.xcconfig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -302,13 +371,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/Presenters/ImageViewPresenter.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="46" column="47" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -326,23 +388,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClient/Reddit.swift">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClient/RedditClientBuilder.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClient/RedditRequestBuilder.swift">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PugMe/RedditImageURLProvider.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -370,7 +419,100 @@
     <entry file="file://$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageViewTests/ImageViewControllerTests.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/Protocols/ImageViewing.swift">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/Protocols/ImageViewPresenting.swift">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/Protocols/ImageUrlProviding.swift">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/Protocols/ImageDownloading.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClient/Protocols/RedditDataRequesting.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/UpdatingImageView/UpdatingImageView/Presenters/ImageViewPresenter.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="63" column="13" selection-start-line="63" selection-start-column="13" selection-end-line="63" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClientTests/GeneratedMocks.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="269" column="10" selection-start-line="269" selection-start-column="10" selection-end-line="269" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClient/Models/RedditListingResponse.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClient/Protocols/RedditClient.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="84" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PugMe/RedditImageURLProvider.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="25" column="86" selection-start-line="25" selection-start-column="86" selection-end-line="25" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClient/Models/RedditListingResponseData.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClient/Protocols/RedditRequestBuilding.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="91" selection-start-line="12" selection-start-column="91" selection-end-line="12" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClient/Reddit.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClient/RedditRequestBuilder.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClientTests/RedditRequestBuilderTests.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="60" column="102" selection-start-line="60" selection-start-column="102" selection-end-line="60" selection-end-column="102" />
         </state>
       </provider>
     </entry>

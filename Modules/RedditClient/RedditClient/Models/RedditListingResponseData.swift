@@ -10,4 +10,5 @@ import Foundation
 
 public struct RedditListingResponseData: Decodable {
     public let children: [RedditListing]
+    public let after: String
 }

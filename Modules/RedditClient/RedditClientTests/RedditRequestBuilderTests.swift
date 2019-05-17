@@ -58,7 +58,7 @@ class RedditRequestBuilderTests: XCTestCase {
         
         let request = requestBuilder.getNewListingRequest(subreddit: "somesubreddit", token: "sometoken")
         
-        XCTAssertEqual(request.url, URL(string: "https://oauth.reddit.com/r/somesubreddit/new?limit=100")!)
+        XCTAssertEqual(request.url, URL(string: "https://oauth.reddit.com/r/somesubreddit/new?limit=25")!)
     }
     
     func test_new_listing_request_should_correct_authorization_header() {

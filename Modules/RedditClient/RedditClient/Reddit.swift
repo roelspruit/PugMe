@@ -49,7 +49,7 @@ extension Reddit: RedditClient {
     /// - Parameters:
     ///   - subreddit: Name of the subreddit
     ///   - completion: Completion callback
-    func getNewListings(subreddit: String, completion: @escaping (RedditListingResponse?) -> Void) {
+    func getNewListings(subreddit: String, previousResponse: RedditListingResponse? = nil, completion: @escaping (RedditListingResponse?) -> Void) {
         
         authorize { [weak self] (tokenResponse) in
             
@@ -58,7 +58,9 @@ extension Reddit: RedditClient {
                 return
             }
             
-            let request = self.requestBuilder.getNewListingRequest(subreddit: subreddit, token: token)
+            let request = self.requestBuilder.getNewListingRequest(subreddit: subreddit,
+                    previousResponse: previousResponse,
+                    token: token)
             
             self.dataRequester.getData(withRequest: request, handler: { [weak self] (data, error) in
                 

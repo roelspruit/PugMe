@@ -14,6 +14,7 @@ final class RedditImageURLProvider: ImageUrlProviding {
 
     private let subreddit: String
     private let reddit: RedditClient
+    private var previousResponse: RedditListingResponse?
     
     init(subreddit: String, client: RedditClient) {
         self.subreddit = subreddit
@@ -22,8 +23,10 @@ final class RedditImageURLProvider: ImageUrlProviding {
     
     func getImageUrls(completion: @escaping ([URL]?) -> Void) {
         
-        reddit.getNewListings(subreddit: subreddit) { (response) in
-                
+        reddit.getNewListings(subreddit: subreddit, previousResponse: previousResponse) { [weak self] (response) in
+
+            self?.previousResponse = response
+
             guard let response = response else {
                 completion(nil)
                 return

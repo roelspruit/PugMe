@@ -31,9 +31,15 @@ final class RedditRequestBuilder: RedditRequestBuilding {
         return request
     }
     
-    func getNewListingRequest(subreddit: String, token: String) -> URLRequest {
-        
-        let url = URL(string: "https://oauth.reddit.com/r/\(subreddit)/new?limit=100")!
+    func getNewListingRequest(subreddit: String, previousResponse: RedditListingResponse? = nil, token: String) -> URLRequest {
+
+        let pageSize = 25
+        var urlString = "https://oauth.reddit.com/r/\(subreddit)/new?limit=\(pageSize)"
+
+        if let after = previousResponse?.data.after {
+            urlString = "\(urlString)&after=\(after)"
+        }
+        let url = URL(string: urlString)!
         
         var request = URLRequest(url: url)
         request.addValue("bearer \(token)", forHTTPHeaderField: "Authorization")

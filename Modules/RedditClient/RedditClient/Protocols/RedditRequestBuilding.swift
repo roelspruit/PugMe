@@ -10,5 +10,5 @@ import Foundation
 
 protocol RedditRequestBuilding {
     func getOAuthRequest() -> URLRequest
-    func getNewListingRequest(subreddit: String, token: String) -> URLRequest
+    func getNewListingRequest(subreddit: String, previousResponse: RedditListingResponse?, token: String) -> URLRequest
 }
