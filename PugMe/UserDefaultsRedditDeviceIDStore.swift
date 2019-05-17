@@ -1,5 +1,5 @@
 //
-//  RedditDeviceIDStore.swift
+//  UserDefaultsRedditDeviceIDStore.swift
 //  PugMe
 //
 //  Created by Roel Spruit on 14/05/2019.
@@ -9,7 +9,7 @@
 import Foundation
 import RedditClient
 
-final class RedditDeviceIDStore: RedditDeviceIDStoring {
+final class UserDefaultsRedditDeviceIDStore: RedditDeviceIDStoring {
     
     private let deviceIDKey = "redditDeviceId"
     
