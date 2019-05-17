@@ -60,6 +60,19 @@ class RedditRequestBuilderTests: XCTestCase {
         
         XCTAssertEqual(request.url, URL(string: "https://oauth.reddit.com/r/somesubreddit/new?limit=25")!)
     }
+
+    func test_new_listing_request_should_have_pagination() {
+
+        let requestBuilder = getRequestBuilder()
+
+        let previousResponse = RedditListingResponse(data: RedditListingResponseData(children: [], after: "someCrypticAfter"))
+
+        let request = requestBuilder.getNewListingRequest(subreddit: "somesubreddit", 
+                previousResponse: previousResponse,
+                token: "sometoken")
+
+        XCTAssertEqual(request.url, URL(string: "https://oauth.reddit.com/r/somesubreddit/new?limit=25&after=someCrypticAfter")!)
+    }
     
     func test_new_listing_request_should_correct_authorization_header() {
         

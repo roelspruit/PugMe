@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="999fc2e2-52c2-4d92-a6c2-91a8e361feb3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Models/RedditListingResponseData.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Models/RedditListingResponseData.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Protocols/RedditClient.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Protocols/RedditClient.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Protocols/RedditRequestBuilding.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Protocols/RedditRequestBuilding.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Reddit.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/Reddit.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/RedditRequestBuilder.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/RedditClient/RedditClient/RedditRequestBuilder.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/RedditClient/RedditClientTests/GeneratedMocks.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/RedditClient/RedditClientTests/GeneratedMocks.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/RedditClient/RedditClientTests/RedditRequestBuilderTests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/RedditClient/RedditClientTests/RedditRequestBuilderTests.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PugMe/RedditImageURLProvider.swift" beforeDir="false" afterPath="$PROJECT_DIR$/PugMe/RedditImageURLProvider.swift" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Caches/AppCode2019.1/DerivedData/PugMe-ddiwptrjnpdsyjesmspgfmnjdzno/Build/Intermediates.noindex/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,8 +68,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClientTests/RedditRequestBuilderTests.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="60" column="102" selection-start-line="60" selection-start-column="102" selection-end-line="60" selection-end-column="102" />
+            <state relative-caret-position="349">
+              <caret line="73" column="125" selection-start-line="73" selection-start-column="125" selection-end-line="73" selection-end-column="125" />
             </state>
           </provider>
         </entry>
@@ -233,7 +226,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="XCTest.All in RedditClientTests">
+  <component name="RunManager" selected="XCTest.RedditRequestBuilderTests.test_new_listing_request_should_have_pagination">
     <configuration name="All in PugMeTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" singleton="false" nameIsGenerated="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PugMe" TARGET_NAME="PugMeTests" CONFIG_NAME="Debug" SCHEME_NAME="All in PugMeTests" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST" XCODE_TESTS_HASH_CODE="0">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -254,6 +247,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RedditRequestBuilderTests.test_new_listing_request_should_have_pagination" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RedditClient" TARGET_NAME="RedditClientTests" CONFIG_NAME="Debug" SCHEME_NAME="RedditRequestBuilderTests.test_new_listing_request_should_have_pagination" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_CLASS="RedditRequestBuilderTests" TEST_METHOD="test_new_listing_request_should_have_pagination" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" PASS_PARENT_ENVS_2="true" IS_LOCATION_SIMULATION_ALLOWED="true" LOCATION_SCENARIO_ID="com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier" LOCATION_SCENARIO_TYPE="1" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -266,9 +264,11 @@
       <item itemvalue="XCTest.All in RedditClientTests" />
       <item itemvalue="XCTest.All in UpdatingImageViewTests" />
       <item itemvalue="XCTest.ImageViewControllerTests" />
+      <item itemvalue="XCTest.RedditRequestBuilderTests.test_new_listing_request_should_have_pagination" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="XCTest.RedditRequestBuilderTests.test_new_listing_request_should_have_pagination" />
         <item itemvalue="XCTest.ImageViewControllerTests" />
       </list>
     </recent_temporary>
@@ -284,14 +284,11 @@
       <option name="presentableId" value="Default" />
       <updated>1558017810106</updated>
       <workItem from="1558017815480" duration="690000" />
-      <workItem from="1558089892639" duration="4078000" />
+      <workItem from="1558089892639" duration="4236000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ImageDownloaderTests_testInvalidDataShouldReturnGenericError - 2019.05.17 at 13h 05m 58s.xml">
-      <configuration name="ImageDownloaderTests.testInvalidDataShouldReturnGenericError" configurationId="OCUnitRunConfiguration" />
-    </history-entry>
     <history-entry file="ImageDownloaderTests_testInvalidDataShouldReturnGenericError - 2019.05.17 at 13h 08m 14s.xml">
       <configuration name="ImageDownloaderTests.testInvalidDataShouldReturnGenericError" configurationId="OCUnitRunConfiguration" />
     </history-entry>
@@ -319,9 +316,12 @@
     <history-entry file="All_in_RedditClientTests - 2019.05.17 at 22h 13m 37s.xml">
       <configuration name="All in RedditClientTests" configurationId="OCUnitRunConfiguration" />
     </history-entry>
+    <history-entry file="All_in_RedditClientTests - 2019.05.17 at 22h 14m 00s.xml">
+      <configuration name="All in RedditClientTests" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4768000" />
+    <option name="totallyTimeSpent" value="4926000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -511,8 +511,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Modules/RedditClient/RedditClientTests/RedditRequestBuilderTests.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="60" column="102" selection-start-line="60" selection-start-column="102" selection-end-line="60" selection-end-column="102" />
+        <state relative-caret-position="349">
+          <caret line="73" column="125" selection-start-line="73" selection-start-column="125" selection-end-line="73" selection-end-column="125" />
         </state>
       </provider>
     </entry>

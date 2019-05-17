@@ -19,6 +19,13 @@
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
+		<key>RedditRequestBuilderTests.test_new_listing_request_should_have_pagination.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false />
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
 	</dict>
 </dict>
 </plist>
