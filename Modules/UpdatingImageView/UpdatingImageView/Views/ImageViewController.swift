@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImageViewController: UIViewController {
+final class ImageViewController: UIViewController {
     
     var presenter: ImageViewPresenting?
     

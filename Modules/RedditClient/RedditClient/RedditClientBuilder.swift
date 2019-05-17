@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct RedditClientBuilder {
+public final class RedditClientBuilder {
     
     public static func build(redditClientId: String, dataRequester: RedditDataRequesting, deviceIdStore: RedditDeviceIDStoring) -> RedditClient {
         

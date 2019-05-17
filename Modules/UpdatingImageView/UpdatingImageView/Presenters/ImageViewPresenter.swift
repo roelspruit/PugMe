@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ImageViewPresenter {
+final class ImageViewPresenter {
     
     private weak var view: ImageViewing?
     private let imageDownloader: ImageDownloading

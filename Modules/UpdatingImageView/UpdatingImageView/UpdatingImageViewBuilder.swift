@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public struct UpdatingImageViewBuilder {
+public final class UpdatingImageViewBuilder {
     
     public static func build(imageDownloader: ImageDownloading, imageUrlProvider: ImageUrlProviding) -> UIViewController {
         
